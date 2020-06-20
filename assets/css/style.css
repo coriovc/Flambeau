@@ -339,7 +339,7 @@ option:hover{
   .site-footer a {
     color: #7ec2f5; }
     .site-footer a:hover {
-      color: #000; }
+      color: #fff; }
   .site-footer ul li {
     margin-bottom: 10px; }
   .site-footer .footer-heading {
@@ -845,6 +845,9 @@ option:hover{
         border-bottom: none;}
       .site-mobile-menu .site-nav-wrap li.active > a {
         color: #7ec2f5; }
+      .site-mobile-menu .site-nav-wrap li > a .link {
+        color: #7ec2f5 !important; }
+
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -2099,14 +2102,7 @@ option:hover{
       height: 5rem;
     }
 
-.btn-circle.btn-xl {
-    width: 70px;
-    height: 70px;
-    padding: 10px 16px;
-    border-radius: 35px;
-    font-size: 24px;
-    line-height: 1.33;
-}
+
 
 .btn-circle {
     width: 50px;
@@ -2118,6 +2114,23 @@ option:hover{
     line-height: 1.42857;
 }
 
+.btn-circle.btn-sm {
+    width: 35px;
+    height: 35px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 17.5px;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
 
 .mast{
     position: relative;
@@ -2139,71 +2152,61 @@ option:hover{
   text-decoration: underline !important;
 }
 
-.link .link-azul{
+.link-a{
   text-decoration: underline !important;
   color:#7ec2f5 !important;
+}
+
+.link-a:hover{
+  color:#ddd !important;
 }
 
 .enline{
   display: inline-block !important;
 }
 
-
-.form-label-group {
-  position: relative;
-  margin-bottom: 1rem;
+.has-float-label {
+    position: relative;
+    font-size: 85%;
+    font-weight: bolder;
 }
 
-.form-label-group > input,
-.form-label-group > label {
-  padding: var(--input-padding-y) var(--input-padding-x);
+.has-float-label label {
+    position: absolute;
+     color: #adacb2;
+    transition: all .2s;
+    top: -.5em;
+    left: .75rem;
+    z-index: 3;
+    line-height: 1;    
+    padding: 9px 0 0 5px
 }
 
-.form-label-group > label {
-  position: absolute;
-  top: 0;
-  left: 3;
-  display: block;
-  width: 100%;
-  margin-bottom: 0;
-  margin-left: 2; /* Override default `<label>` margin */
-  line-height: 1.5;
-  color: #495057;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  transition: all .1s ease-in-out;
+.has-float-label.textarea label {
+    padding: 0 0 0 5px;
+    top: -.9em;
 }
 
-.form-label-group input::-webkit-input-placeholder {
-  color: transparent;
+.has-float-label label::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 2px;
+    top: 50%;
+    left: -.2em;
+    right: -.2em;
+    z-index: -1
 }
 
-.form-label-group input:-ms-input-placeholder {
-  color: transparent;
+
+.has-float-label .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+    opacity: 0
 }
 
-.form-label-group input::-ms-input-placeholder {
-  color: transparent;
-}
-
-.form-label-group input::-moz-placeholder {
-  color: transparent;
-}
-
-.form-label-group input::placeholder {
-  color: transparent;
-}
-
-.form-label-group input:not(:placeholder-shown) {
-  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
-  padding-bottom: calc(var(--input-padding-y) / 3);
-}
-
-.form-label-group input:not(:placeholder-shown) ~ label {
-  padding-top: calc(var(--input-padding-y) / 3);
-  padding-bottom: calc(var(--input-padding-y) / 3);
-  font-size: 12px;
-  color: #777;
+.has-float-label .form-control:placeholder-shown:not(:focus)+label {
+    font-size: 110%;
+    color: #adacb2;
+    top: .3em
 }
 
 .bg-image{
