@@ -65,6 +65,10 @@ html {
 .font-size-30 {
   font-size: 30px; }
 
+.font-zize-h6 {
+  font-size: 1.1rem;
+}
+
 .serif {
   font-family: "Hepta Slab", serif; }
 
@@ -1955,9 +1959,9 @@ option:hover{
   transform: translate(-50%, -50%) scale(1); }
 
 .item:hover a img {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out; }
@@ -2094,14 +2098,21 @@ option:hover{
   padding-left: 0.5rem;
 }
 
-  div.vertical-line{
-      width: 1px;
-      background-color: #c4c4c4; 
-      
-      float: left; 
+.vertical-line{
+      background-color: #c4c4c4;
+      width: 1px;        
       height: 5rem;
-    }
+}
 
+.line-h {
+      background-color: #c4c4c4;
+      width: 28rem; 
+      height: 1px; }
+
+.line-v {
+      background-color: #c4c4c4;
+      width: 1px;        
+      height: 9rem; }
 
 
 .btn-circle {
@@ -2137,7 +2148,7 @@ option:hover{
     width: 100%;
     height: 100%;
     padding: 1rem 0;
-    background: linear-gradient(to bottom, rgba(28, 52, 95, 0.3) 0%, rgba(28, 52, 95, 1) 50%, #1c345f 100%), url("../images/hero_1.jpg");
+    background: linear-gradient(to bottom, rgba(28, 52, 95, 0.3) 0%, rgba(28, 52, 95, 1) 50%, #1c345f 100%), url("../img/img-2.jpg");
     background-position: center;
     background-repeat: repeat;
     background-attachment: scroll;
@@ -2210,7 +2221,11 @@ option:hover{
 }
 
 .bg-image{
-  background: url("../img/img1.jpg") center / cover  fixed;
+  background: url("../img/img-1.jpg") center / cover  fixed;
+}
+
+.bg-image-g{
+  background: url("../img/guardar.jpg") center / cover  fixed;
 }
 
 .cent{
@@ -2226,17 +2241,10 @@ option:hover{
    
 }
 
-
-
 .main {
     padding-top: 2rem;
     z-index: 100;
 }
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-}
-
 
 
 @media screen and (min-width: 768px){
@@ -2264,4 +2272,30 @@ a[aria-expanded=false] .icon-angle-down {
   -ms-transform:     rotate(180deg);
   -o-transform:      rotate(180deg);
   transform:         rotate(180deg);
+}
+
+.abs-center {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 90vh !important;
+  z-index: 100% !important;
+
+}
+
+.custom-file-uploader {
+  position: relative;
+}
+.custom-file-uploader input[type='file'] {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 20;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: default;
 }
