@@ -2,12 +2,14 @@ function trim(stringToTrim) {
 	return stringToTrim.replace(/^\s+|\s+$/g,"");
 }
 $(document).ready(function() {
+	
 	$("#btn_send").click(function () {
 		//alert("hi");return false;
 		//nombre y apellido
 		if ( trim($("#name").val()) == '' )
 		{
-			$("#error_name").html('Por favor Introdusca su nombre');
+			$('.name').addClass('was-validated');
+			$("#error_name").html('Por favor ingrese su nombre y apellido.');
 			$("#error_name").show();
 			$("#name").val('').focus();
 			return false;
@@ -20,7 +22,8 @@ $(document).ready(function() {
 		var emailfilter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 		if ( !emailfilter.test(trim($("#emailid").val())) )
 		{
-			$("#error_emailid").html('Ingrese un email correcto');
+			$('.email').addClass('was-validated');
+			$("#error_emailid").html('Ingrese un email correcto.');
 			$("#error_emailid").show();
 			$("#emailid").focus();
 			return false;
@@ -32,7 +35,8 @@ $(document).ready(function() {
 		//telenono
 		if ( trim($("#phone").val()) == '' )
 		{
-			$("#error_phone").html('Please enter only 10 digits, not starting with 0. Valid Format : xxx-xxx-xxxx');
+			$('.phone').addClass('was-validated');
+			$("#error_phone").html('Por favor ingrese 10 digitos, sin iniciar con 0.');
 			$("#error_phone").show();
 			$("#phone").val('').focus();
 			return false;
@@ -43,7 +47,8 @@ $(document).ready(function() {
 			var phonefilter = /^(?!(0))\d{3}\d{3}\d{4}$/;
 			if ( !phonefilter.test(value) )
 			{
-				$("#error_phone").html('Please enter only 10 digits, not starting with 0. Valid Format : xxx-xxx-xxxx');
+				$('.phone').addClass('was-validated');
+				$("#error_phone").html('Por favor ingrese 10 digitos, sin iniciar con 0.');
 				$("#error_phone").show();
 				$("#phone").focus();
 				return false;
@@ -57,7 +62,8 @@ $(document).ready(function() {
 		//empresa
 		if ( trim($("#company").val()) == '' )
 		{
-			$("#error_company").html('company error');
+			$('.company').addClass('was-validated');
+			$("#error_company").html('Ingrese su empresa.');
 			$("#error_company").show();
 			$("#company").val('').focus();
 			return false;
@@ -69,7 +75,8 @@ $(document).ready(function() {
 		//sector	
 		if ( trim($("#sector").val()) == '' )
 		{
-			$("#error_sector").html('Please enter Last Name');
+			$('.sector').addClass('was-validated');
+			$("#error_sector").html('Seleccione un sector.');
 			$("#error_sector").show();
 			$("#sector").val('').focus();
 			return false;
@@ -81,7 +88,8 @@ $(document).ready(function() {
 		//sitio web
 		if ( trim($("#web").val()) == '' )
 		{
-			$("#error_web").html('Please enter Last Name');
+			$('.web').addClass('was-validated');
+			$("#error_web").html('Ingrese un sitio web correcto.');
 			$("#error_web").show();
 			$("#web").val('').focus();
 			return false;
@@ -93,7 +101,8 @@ $(document).ready(function() {
 		//ciudad
 		if ( trim($("#city").val()) == '' )
 		{
-			$("#error_city").html('Please enter Last Name');
+			$('.city').addClass('was-validated');
+			$("#error_city").html('Indique su ciudad.');
 			$("#error_city").show();
 			$("#city").val('').focus();
 			return false;
@@ -105,7 +114,8 @@ $(document).ready(function() {
 		//inversion
 		if ( trim($("#inv").val()) == '' )
 		{
-			$("#error_inv").html('Please enter Last Name');
+			$('.inv').addClass('was-validated');
+			$("#error_inv").html('seleccione un monto de inversion.');
 			$("#error_inv").show();
 			$("#inv").val('').focus();
 			return false;
@@ -117,7 +127,8 @@ $(document).ready(function() {
 		//facturacion anual
 		if ( trim($("#fau").val()) == '' )
 		{
-			$("#error_fau").html('ingrese');
+			$('.fau').addClass('was-validated');
+			$("#error_fau").html('Indique su Facturacion anual en UDS.');
 			$("#error_fau").show();
 			$("#fau").val('').focus();
 			return false;
@@ -129,7 +140,8 @@ $(document).ready(function() {
 		//linkedin
 		if ( trim($("#linkedin").val()) == '' )
 		{
-			$("#error_linkedin").html('ingrese linkedin');
+			$('.linkedin').addClass('was-validated');
+			$("#error_linkedin").html('ingrese un linkedin');
 			$("#error_linkedin").show();
 			$("#linkedin").val('').focus();
 			return false;
@@ -141,7 +153,8 @@ $(document).ready(function() {
 		//adjuntar propuesta
 		if ( trim($("#ap").val()) == '' )
 		{
-			$("#error_ap").html('ingrese ap');
+			$('.ap').addClass('was-validated');
+			$("#error_ap").html('Ajunte una propuesta.');
 			$("#error_ap").show();
 			$("#ap").val('').focus();
 			return false;
@@ -153,7 +166,8 @@ $(document).ready(function() {
 		//cuentanos sobre tu empresa
 		if ( trim($("#cste").val()) == '' )
 		{
-			$("#error_cste").html('text area');
+			$('.cste').addClass('was-validated');
+			$("#error_cste").html('Cuentanos algo sobre tu empresa.');
 			$("#error_cste").show();
 			$("#cste").val('').focus();
 			return false;

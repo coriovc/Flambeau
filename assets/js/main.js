@@ -262,7 +262,7 @@ jQuery(document).ready(function($) {
 
       $('html, body').animate({
         'scrollTop': $(hash).offset().top - 50
-      }, 600, 'easeInOutExpo', function() {
+      }, 500, 'easeInOutExpo', function() {
         // window.location.hash = hash;
 
       });
@@ -285,9 +285,40 @@ jQuery(document).ready(function($) {
   			$('.js-sticky-header').removeClass('shrink');
   		}
 
-  	}) 
+  	});
+
+  	$(window).scroll(function() {
+
+  		var st = $(this).scrollTop();
+
+  		if (st > 100) {
+  			$('.btn-ouline').addClass('btn-outline-primary');
+  		} if(st < 100)  {
+  			$('.btn-ouline').addClass('btn-outline-light');
+  		}else{
+  			$('.btn-ouline').removeClass('btn-outline-light');
+  		}
+
+  	});
+
+
+    $(document).scroll(function(){
+        if($(this).scrollTop() > 100) {
+            $('#logo').attr('src','../assets/img/logo-gray.png')
+        }
+        if($(this).scrollTop() < 100) {        
+         $('#logo').attr('src','../assets/img/logo-home.png');   
+        }
+    });
+
+
 
   };
+
+
+  	
+
+  	
   siteScroll();
 
   // Stellar

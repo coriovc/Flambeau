@@ -19,9 +19,9 @@
   <body class="bg-image-g">
     
     <div class="justify-content-center">
-    <div class="container-fluid">
+    <div class="container">
       <div class="abs-center">
-      <div class="col-lg-4">
+      <div class="col-lg-5">
       <div class="d-inline-block d-xl-none" style="min-height: 100px;"></div>
       <div class="text-center">
         <img class="img-fluid mb-5" width="200"  src="../assets/img/logo-white.png">
@@ -34,11 +34,12 @@
         <form>
             <fieldset>                
               <div class="form-group">
-                <div class="my-4 has-float-label">
-                    <input type="email" id="email" class="form-control " placeholder=" " required>
-                    <label for="email">Email</label>                      
-                    <div class="invalid-feedback">Complete este campo</div>                   
-                </div> 
+                <div class="my-4 form-label-group">
+                  <input type="email" name="emailid" id="emailid" value="" class="form-control" placeholder="Email" required>
+                  <label for="emailid">Email</label>                  
+                  <div class="invalid-feedback"></div>
+                  <span id="error_emailid" class="error"></span>  
+                  </div> 
               </div>
             </fieldset>             
             <div class="card-footer text-center">

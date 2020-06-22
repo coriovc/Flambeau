@@ -17,7 +17,7 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
   <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
@@ -27,31 +27,29 @@
         </div>
         <div class="site-mobile-menu-body"></div>
       </div>
-      
+        
       <div class="bg-blue d-none d-xl-block">
         <div class="justify-content-right text-right text-white mr-5"> 
               <a href="">ESP</a><span> / </span><a class="text-white" href="../en/">ENG</a>
         </div>
       </div>
-      
-    <header class="site-navbar">
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
       <div class="container">
         <div class="row align-items-center">          
           <div class="col-6 col-xl-2">
-            <div class="mb-0 site-logo"><a href="index" class="mb-0"><img class="img-fluid"  src="../assets/img/logo-home.png"></a></div>
+            <div class="mb-0 site-logo"><a href="index" class="mb-0"><img id="logo" id="logo" class="img-fluid"  src="../assets/img/logo-home.png"></a></div>
           </div>
-          
           <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation text-right" role="navigation">
+            <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><div class="d-inline-block d-xl-none"><a class="text-primary" href="">ESP</a><span>/</span><a href="../en/">ENG</a></div></li>
                 <li class="d-inline-block d-xl-none"><hr></li>
-                <li><a href="index" class="nav-link active">Home</a></li>
-                <li><a href="criterio" class="nav-link">Criterio</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#criterio" class="nav-link">Criterio</a></li>
                 <li><a href="#postularce" class="nav-link">Postulate</a></li>
                 <li><a href="faqs" class="nav-link">FAQs</a></li>
                 <li><a href="contacto" class="nav-link">Contacto</a></li>
-                <li><button onclick="window.location='login'"class="d-none d-xl-block btn btn-outline-light btn-sm">Login</button></li>
+                <li><button onclick="window.location='login'"class="d-none d-xl-block btn-ouline btn btn-outline-light btn-sm">Login</button></li>
                 <li class="d-inline-block d-xl-none"><button onclick="window.location='login-movil'"class="btn btn-outline-primary btn-sm my-3 ml-3">Login</button></li>
                 <li class="d-inline-block d-xl-none"><hr></li>
                 <li class="d-inline-block d-xl-none">                  
@@ -65,16 +63,13 @@
               </ul>
             </nav>
           </div>
-
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;">
-            <a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-white"></span></a></div>
-
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
         </div>
-      </div>
+      </div>      
     </header>
 
 
-    <div class="ftco-blocks-cover-1">
+    <div class="ftco-blocks-cover-1" id="home" data-aos="fade">
       <div class="site-section-cover" style="background-image: url('../assets/img/img-1.jpg')">
         <div class="container">
           <div class="row align-items-center justify-content-left">
@@ -82,11 +77,16 @@
               <h3 class="display-title mb-4 text-white font-IBM">Potenciamos startups tecnológicas discruptivas que <span class=" tex-b">buscan escalabilidad.</span></h3>
               <p>Invertimos desde <strong class="font-weight-bold">USD 300K hasta USD 5M</strong> para transformar startups tecnológicas</p>
               <p class="mb-4">argentinas en compañías que quieran expandir sus negocios a otros países</p>
-              <p class="mt-5"><a href="#postularce" class="btn btn-blue py-3 px-5 mayus">Postularme</a></p>
+              <p class="mt-5"><a href="#postularce" class="btn btn-blue py-3 px-5 mayus smoothscroll">Postularme</a></p>
             </div>
           </div>
         </div>
       </div>
+      <a href="#section-1" class="mouse smoothscroll">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+      </a>
     </div>
 
 
@@ -103,7 +103,7 @@
     </div>
 
 
-    <div class="site-section bg-blue text-white">
+    <div class="site-section bg-blue text-white" id="criterio">
       <div class="container">
         <div class="row mb-5" >
             <h1 class="display-3 text-white mb-3 ml-4 ">Criterio.</h1>
@@ -135,7 +135,7 @@
       </div>
     </div>
 
-    <div class="site-section-cover" style="background-image: url('../assets/img/img-2.jpg')">
+    <div class="site-section-cover" style="background-image: url('../assets/img/img-2.jpg')" id="acerca-de">
         <div class="container ">
           <div class="row align-items-center">
             <div class="container-fluid">
@@ -146,7 +146,7 @@
               <p class="mb-4">que tengan como objetivo <span class="tex-b1" >expandir sus negocios a otros países.</span></p>
               <p>Los socios que la conforman Flambeau Capital Partners cuentan con extensa trayectoria</p>  
               <p class="mb-5">creando y liderando Empresas en Europa y latam.</p>
-              <a href="#postularce" class="h2 py-4 text-white"><i class="icon-angle-right p-2"></i>Postulate</a>
+              <a href="#postularce" class="h2 py-4 text-white smoothscroll"><i class="icon-angle-right p-2"></i>Postulate</a>
             </div>
           </div>
           </div>
@@ -154,7 +154,7 @@
     </div>
 
 
-    <div class="site-section">
+    <div class="site-section" id="alianzas">
       <div class="container">
         <div class="row align-items-center">          
           <div class="col" >
@@ -265,18 +265,18 @@
         <div class="card"> 
           <div class="container justify-content-center">
           <div class="card-body">          
-          <form class="needs-validation" novalidate>
+          <form>
               <fieldset> 
                 <div class="form-group row justify-content-between">
                   
-                  <div class="col-lg-6 my-4 form-label-group">
+                  <div class="col-lg-6 my-4 form-label-group name">
                   <input type="text" name="name" id="name" value="" class="form-control" placeholder="Nombre y apellido" required>
                   <label for="name">Nombre y apellido *</label>
                   <div class="invalid-feedback"></div>
                   <span id="error_name" class="error"></span> 
                   </div>
                   
-                  <div class="col-lg-6 my-4 form-label-group">
+                  <div class="col-lg-6 my-4 form-label-group email">
                   <input type="email" name="emailid" id="emailid" value="" class="form-control" placeholder="Email Corporativo" required>
                   <label for="emailid">Email Corporativo *</label>                  
                   <div class="invalid-feedback"></div>
@@ -286,7 +286,7 @@
                 </div>                
                 <div class="form-group row justify-content-between">
                   
-                  <div class="col-lg-6 my-4 form-label-group">
+                  <div class="col-lg-6 my-4 form-label-group phone">
                   <input type="text" name="phone" id="phone" value="" class="form-control" placeholder="Telefono" required>
                   <label for="inputPhone">Telefono *</label>                  
                   <div class="invalid-feedback"></div>
@@ -294,7 +294,7 @@
 
                   </div>
 
-                  <div class="col-lg-6 my-4 form-label-group">
+                  <div class="col-lg-6 my-4 form-label-group company">
                   <input type="text" name="company" id="company" value="" class="form-control" placeholder="Empresa" required>
                   <label for="company">Empresa *</label>                  
                   <div class="invalid-feedback"></div>
@@ -302,7 +302,7 @@
                   </div>
 
                 </div>
-                <div class="form-group row justify-content-between">
+                <div class="form-group row justify-content-between sector">
                 <div class="col-lg-6 my-4 floating-label">  
                     <select class="floating-select" name="sector" id="sector" onclick="this.setAttribute('value', this.value);" value="" required>
                       <option value=""></option>
@@ -333,25 +333,25 @@
                       <span id="error_sector" class="error"></span>
                   </div>                  
 
-                  <div class="col-lg-6 my-4 form-label-group">
+                  <div class="col-lg-6 my-4 form-label-group web">
                   <input type="text" name="web" value="" id="web" class="form-control" placeholder="Sitio web" required>
                   <label for="web">Sitio web *</label>                  
-                  <div class="invalid-feedback">Complete este campo</div>
+                  <div class="invalid-feedback"></div>
                   </span><span id="error_web" class="error"></span>   
                   </div>
 
                 </div>
                 <div class="form-group row">
                   
-                  <div class="col-lg-6 my-4 form-label-group">
+                  <div class="col-lg-6 my-4 form-label-group city">
                   <input type="text" name="city" id="city" value="" class="form-control" placeholder="Ciudad" required>
                   <label for="city">Ciudad *</label>                  
                   <div class="invalid-feedback"></div>
                   <span id="error_city" class="error"></span>  
                   </div>
                   
-                  <div class="col-lg-6 my-4 floating-label">  
-                        <select class="floating-select" name="inv" id="inv" onclick="this.setAttribute('value', this.value);" value="">
+                  <div class="col-lg-6 my-4 floating-label inv">  
+                        <select class="floating-select" name="inv" id="inv" onclick="this.setAttribute('value', this.value);" value="" required>
                           <option value=""></option>
                           <option value="1">100</option>
                           <option value="2">100</option>
@@ -376,18 +376,16 @@
                     <input class="custom-control-input redio" name="redio-inversion" type="radio" value="inversion" id="si"/>
                     <label class="custom-control-label" for="si"> Si</label></div>
                           
-                    <div class="my-4 form-label-group" id="div-si" style="display:none;">
+                    <div class="my-4 form-label-group needs-validation" id="div-si" style="display:none;">
                     <input type="text" id="invpre" class="form-control" placeholder="Detalle de la inversion previa">
-                    <label for="invpre">Detalle de la inversion previa</label>                  
-                    <div class="invalid-feedback">Complete este campo</div>  
+                    <label for="invpre">Detalle de la inversion previa</label>  
                     </div>
                    
 
                     <div id="div-no" style="display:none;"></div>
-                    <div class="invalid-feedback"></div>
                   </div>
 
-                  <div class="col-lg-6 my-4 form-label-group">
+                  <div class="col-lg-6 my-4 form-label-group fau">
                   <input type="text" name="fau" value="" id="fau" class="form-control" placeholder="Facturacion anual en USD" required>
                   <label for="fau">Facturacion anual en USD *</label>                  
                   <div class="invalid-feedback"></div>
@@ -405,7 +403,7 @@
                 <div class="form-group row justify-content-between">                  
                   <legend class="my-4 text-blue"><strong>Linkedin Equipo Directivo</strong></legend>
                   
-                  <div class="col-lg-6 my-4 form-label-group">
+                  <div class="col-lg-6 my-4 form-label-group linkedin">
                   <input type="text" name="linkedin" value="" id="linkedin" class="form-control" placeholder="Ingresar Linkedin*" required>
                   <label for="linkedin">Ingresar Linkedin*</label>                  
                   <div class="invalid-feedback"></div>
@@ -426,10 +424,10 @@
             <fieldset>
             <legend class="my-4 text-blue"><strong>Adjunta tu Propuesta</strong></legend>
                 <div class="form-group row justify-content-between">                  
-                  <div class="col-lg-6 my-4">                    
+                  <div class="col-lg-6 my-4 ap">                    
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="file1" aria-describedby="file1" onchange="this.form.file1.value = this.files.length ? this.files[0].name : ''">
+                        <input type="file" class="custom-file-input" id="file1" aria-describedby="file1" onchange="this.form.file1.value = this.files.length ? this.files[0].name : ''" required>
                         <label class="custom-file-label" for="file1">
                         <input style="border:none;width: 100%;margin: 0;" type="text" name="file1" placeholder="Ajuntar tu propuesta*"></label>
                       </div>
@@ -452,7 +450,7 @@
                 </div>
 
                 <div class="form-group row"> 
-                  <div class="col-lg-6 my-4 form-label-group">
+                  <div class="col-lg-6 my-4 form-label-group cste">
                   <textarea name="cste" id="cste" class="form-control" size="500" maxlength="500" rows="10" placeholder="Cuentanos sobre tu empresa (Max. 500 caractéres) *" required></textarea>         
                   <span id="error_cste" class="error"></span> 
                   </div>                  
@@ -467,20 +465,20 @@
                 
                 <div class="d-none d-lg-block">
                 <div class="row ml-1">
-                <button type="submit" name="btn_send" id="btn_send" class="btn btn-primary border-0 py-3 px-5">Enviar</button>
+                <button type="submit" name="btn_send" id="btn_send" class="btn btn-primary border-0 py-3 px-5" >Enviar</button>
                 <i class="icon-angle-right p-2 text-white"></i><a href="guardar" class="mt-2 text-white h5 link">Guardar y continuar mas tarde</a>
         </div>
               </div>
 
               <div class="d-inline-block d-xl-none">
                 <i class="icon-angle-right p-2 text-white"></i><a href="guardar" class="mt-2 text-white h5 link">Guardar y continuar mas tarde</a>
-                <button type="submit" name="btn_send" id="btn_send" class="col btn btn-primary border-0 mt-4">Enviar</button>
+                <button type="submit" name="btn_send" id="btn_send" class="col btn btn-primary btn-disable border-0 mt-4">Enviar</button>
               </div>
 
                 <div align="left" class="text-white ml-4 mt-3 h5">
                   <div class="custom-control custom-checkbox">
-                    <input class="custom-control-input small" id="checkbox1" type="checkbox" />
-                    <label class="custom-control-label small" for="checkbox1">Al postularme, declaro que acepto los <a class="link" href="#">Términos y condiciones</a> y las <a class="link" href="#">Politicas de privacidad </a>de Flambeau Capital Partners.</label>
+                    <input class="custom-control-input small" id="chek" type="checkbox" required/>
+                    <label class="custom-control-label small" for="chek">Al postularme, declaro que acepto los <a class="link" href="terminos-y-condiciones">Términos y condiciones</a> y las <a class="link" href="politica-de-privacidad">Politicas de privacidad </a>de Flambeau Capital Partners.</label>
                   </div>
                 </div>
               </div>
@@ -510,28 +508,11 @@
 
 
 </body>
-  <script>
-    (function() {
-    window.addEventListener('load', function() {
-      var forms = document.getElementsByClassName('needs-validation');
-
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
-  </script>  
   <script src="../assets/js/jquery-3.3.1.min.js"></script>
   <script src="../assets/js/jquery-migrate-3.0.1.js"></script>  
   <script src="../assets/js/jquery.easing.1.3.js"></script>
   <script src="../assets/js/bootstrap.min.js"></script>
-  <script src="../assets/js/jquery.sticky.js"></script>
+  <script src="../assets/js/jquery.sticky.js"></script> 
   <script src="../assets/js/aos.js"></script>
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/script.js"></script>  
