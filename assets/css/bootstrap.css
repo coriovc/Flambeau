@@ -1700,17 +1700,17 @@ pre {
     border-color: #52c3f8;
     outline: 0;}
   .form-control::-webkit-input-placeholder {
-    color: #6c757d;
-    opacity: 1; }
+    color: #adacb2;
+    }
   .form-control:-ms-input-placeholder {
-    color: #6c757d;
-    opacity: 1; }
+    color: #adacb2;
+    }
   .form-control::-ms-input-placeholder {
-    color: #6c757d;
-    opacity: 1; }
+    color: #adacb2;
+    }
   .form-control::placeholder {
-    color: #6c757d;
-    opacity: 1; }
+    color: #adacb2;
+    }
   .form-control:disabled, .form-control[readonly] {
     background-color: #e9ecef;
     opacity: 1; }
