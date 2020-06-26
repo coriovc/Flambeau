@@ -69,13 +69,97 @@ html {
   font-size: 1.1rem;
 }
 
+.font-m-login {
+  font-size: 0.8rem;
+}
+
 .font-zize-1rem {
-  font-size: 1rem !important;
+  font-size: 1rem;
+}
+@media (min-width: 360px) {
+    .font-zize-1rem {
+      font-size: 1.4rem; } }
+  @media (min-width: 768px) {
+    .font-zize-1rem {
+      font-size: 1.4rem; } }
+  @media (min-width: 992px) {
+    .font-zize-1rem {
+      font-size: 1rem; } }
+  @media (min-width: 1200px) {
+    .font-zize-1rem {
+      font-size: 1rem; } }
+
+.font-zize-1rem-a {
+  font-size: 1rem;
+}
+
+.font-zize-lang {
+  font-size: 1rem;
 }
 
 .font-zize-2rem {
-  font-size: 2rem !important;
+  font-size: 2rem ;
 }
+
+@media (min-width: 360px) {
+    .font-zize-2rem {
+      font-size: 1.6rem; } }
+  @media (min-width: 768px) {
+    .font-zize-2rem {
+      font-size: 1.6rem; } }
+  @media (min-width: 992px) {
+    .font-zize-2rem {
+      font-size: 2rem; } }
+  @media (min-width: 1200px) {
+    .font-zize-2rem {
+      font-size: 2rem; } }
+
+.font-a {
+  font-size: 3.6rem ;
+  font-family: 'Martel';
+}
+
+@media (min-width: 360px) {
+    .font-a {
+      font-size: 2.9rem; } }
+  @media (min-width: 768px) {
+    .font-a {
+      font-size: 2.9rem; } }
+  @media (min-width: 992px) {
+    .font-a {
+      font-size: 3.6rem; } }
+  @media (min-width: 1200px) {
+    .font-a {
+      font-size: 3.6rem; } }
+
+.display-a {
+  font-size: 3.6rem;
+  font-weight: 200;
+  line-height: 1.2;
+  font-family: 'Martel';} }
+
+  @media (min-width: 360px) {
+    .display- {
+      font-size: 2.4rem; } }
+  @media (min-width: 768px) {
+    .display- {
+      font-size: 2.4rem; } }
+  @media (min-width: 992px) {
+    .display- {
+      font-size: 3.6rem; } }
+  @media (min-width: 1200px) {
+    .display- {
+      font-size: 3.6rem; } }
+
+.Titulo-a{
+  font-size: 1.5rem;
+  font-weight: 500;
+} 
+
+.texto-a{
+  font-size: 0.9rem;
+}
+
 
 .font-zize-3rem {
   font-size: 3rem !important;
@@ -334,14 +418,86 @@ option:hover{
 
 
 .site-section {
-  padding: 2.5em 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center center; }
-  @media (min-width: 768px) {
+
+  .site-section {
+  padding: 7rem 0; }
+  @media (max-width: 991.98px) {
     .site-section {
-      padding: 5em 0; } }
-  .site-section.site-section-sm {
-    padding: 4em 0; }
+      padding: 5rem 0; } }
+
+
+  .site-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+  .site-section {
+  padding: 7rem 0; }
+  @media (max-width: 991.98px) {
+    .site-section {
+      padding: 5rem 0; } }
+      
+
+  .site-section-ali {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+  .site-section-ali {
+  padding: 7rem 0 0 0; }
+  @media (max-width: 991.98px) {
+    .site-section-ali {
+      padding: 5rem 0 0 0; } }
+
+  .site-section-cri {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+  .site-section-cri {
+  padding: 7rem 0 3rem 0; }
+  @media (max-width: 991.98px) {
+    .site-section-cri {
+      padding: 5rem 0; } }
+
+  .site-section-ma {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+  .site-section-ma {
+  padding: 7rem 0 7rem 0; }
+  @media (max-width: 991.98px) {
+    .site-section-ma {
+      padding: 5rem 0; } }
+
+.site-section-movil {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+.site-section-movil {
+  padding: 9rem 0; }
+  @media (min-width: 991.98px) {
+    .site-section-movil {
+      padding: 2rem 0; } }
+
+  
 
 .site-footer {
   padding: 2em 0;
@@ -943,9 +1099,9 @@ option:hover{
   position: absolute;
   top: 0.2; }
   .sticky-wrapper .site-navbar {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease; }
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease; }
   .sticky-wrapper .site-navbar {
     background: transparent; }
     .sticky-wrapper .site-navbar ul li a {
@@ -975,6 +1131,9 @@ option:hover{
 /* Blocks */
 .site-section-cover {
   position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
   background-size: cover;
   background-position: center center; }
   .site-section-cover,
@@ -1025,24 +1184,19 @@ option:hover{
     background-size: cover;
     background-repeat: no-repeat; }
   .site-section-cover h1 {
-    font-size: 3rem;
-    color: #fff;
-    line-height: 1;
-    font-weight: 300; }
-    @media (max-width: 991.98px) {
-      .site-section-cover h1 {
-        font-size: 2rem; } }
+    color: #fff;}    
   .site-section-cover p {
-    font-size: 18px;
     color: #fff; }
 
 
 /* Blocks */
 .site-section-cover-2 {
-  position: absolute;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;}
+  background-position: center center; }
   .site-section-cover-2,
   .site-section-cover-2 .container {
     position: relative;
@@ -1079,23 +1233,13 @@ option:hover{
     background-size: cover;
     background-repeat: no-repeat; }
   .site-section-cover-2 h1 {
-    font-size: 3rem;
-    color: #fff;
-    line-height: 1;
-    font-weight: 300; }
-    @media (max-width: 991.98px) {
-      .site-section-cover-2 h1 {
-        font-size: 2rem; } }
+    color: #fff; }
+    
   .site-section-cover-2 p {
-    font-size: 18px;
     color: #fff; }
 
 
-.site-section {
-  padding: 7rem 0; }
-  @media (max-width: 991.98px) {
-    .site-section {
-      padding: 5rem 0; } }
+
 
 .block-heading-1 span {
   text-transform: uppercase;
@@ -2139,13 +2283,13 @@ option:hover{
 
 .tex-b{
   position: relative;
-  width: 300px;
-  margin: 40px auto;
   text-align: center;
-  line-height: 1.5em;
+  line-height: 1.2;
   color: #fff;
+  padding:0 0.5rem;
   overflow: hidden;  
   background-color: #52C3F8;
+
 }
 
 .tex-b1{
@@ -2153,7 +2297,6 @@ option:hover{
   width: 300px;
   margin: 40px auto;
   text-align: center;
-  line-height: 1.5em;
   color: #fff;
   overflow: hidden;  
   background-color: #003FA0;
@@ -2216,6 +2359,7 @@ option:hover{
     background-size: cover;
   }
 
+
 .mayus{
   text-transform: uppercase !important;
 }
@@ -2223,6 +2367,15 @@ option:hover{
 .link{
   text-decoration: underline !important;
   font-size: 0.8rem !important;
+}
+
+.link-g{
+  text-decoration: underline !important;
+  font-size: 1.2rem !important;
+}
+
+.link-check{
+  text-decoration: underline !important;
 }
 
 .link-a{
@@ -2234,6 +2387,15 @@ option:hover{
 .link-a:hover{
   color:#ddd !important;
 }
+
+.link-p{
+  color:#ddd  !important;
+}
+
+.link-p:hover{
+  color:#52c3f8 !important;
+}
+
 
 .enline{
   display: inline-block !important;
@@ -2380,11 +2542,17 @@ a[aria-expanded=false] .icon-angle-down {
 }
 
 .abs-center {
+
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;   
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  min-height: 90vh !important;
+  min-height: 80vh !important;
   z-index: 100% !important;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
 
 }
 
@@ -2417,6 +2585,33 @@ div.ricki
   -webkit-transition:0.2s ease all;
 }
 
+ img {
+  transition: opacity .2s ease-in-out;
+}
 
+ img.top:hover {
+  opacity: 0;
+}
 
+.mdl-tooltip{-webkit-transform:scale(0);
+transform:scale(0);
+-webkit-transform-origin:top center;
+transform-origin:top center;
+z-index:999;
+color:#fff;
+display:inline-block;
+font-size:15px;
+font-weight:600;
+line-height:14px;
+max-width:200px;
+position:fixed;
+top:-500px;
+left:-500px;
+padding:8px;
+text-align:center;
+background-color: rgba(0,0,0, 0.2);
+border-radius: 0.35rem
+}
 
+.mdl-tooltip.is-active{-webkit-animation:pulse 200ms cubic-bezier(0,0,.2,1)forwards;
+  animation:pulse 200ms cubic-bezier(0,0,.2,1)forwards}

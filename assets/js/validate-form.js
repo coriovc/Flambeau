@@ -36,7 +36,7 @@ $(document).ready(function() {
 		if ( trim($("#phone").val()) == '' )
 		{
 			$('.phone').addClass('was-validated');
-			$("#error_phone").html('Por favor ingrese 10 digitos, sin iniciar con 0.');
+			$("#error_phone").html('Por favor ingrese 8 digitos,');
 			$("#error_phone").show();
 			$("#phone").val('').focus();
 			return false;
@@ -44,11 +44,11 @@ $(document).ready(function() {
 		else
 		{
 			var value = trim($("#phone").val());
-			var phonefilter = /^(?!(0))\d{3}\d{3}\d{4}$/;
+			var phonefilter = /^(?!(0))\d{8}$/;
 			if ( !phonefilter.test(value) )
 			{
 				$('.phone').addClass('was-validated');
-				$("#error_phone").html('Por favor ingrese 10 digitos, sin iniciar con 0.');
+				$("#error_phone").html('Por favor ingrese 8 digitos,');
 				$("#error_phone").show();
 				$("#phone").focus();
 				return false;
