@@ -89,6 +89,23 @@ html {
     .font-zize-1rem {
       font-size: 1rem; } }
 
+.font-tc {
+  font-size: 1rem;
+}
+@media (min-width: 360px) {
+    .font-tc {
+      font-size: 0.8rem; } }
+  @media (min-width: 768px) {
+    .font-tc {
+      font-size: 0.8rem; } }
+  @media (min-width: 992px) {
+    .font-tc {
+      font-size: 1rem; } }
+  @media (min-width: 1200px) {
+    .font-tc {
+      font-size: 1rem; } }
+
+
 .font-zize-1rem-a {
   font-size: 1rem;
 }
