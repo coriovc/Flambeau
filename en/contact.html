@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Flambeau Capital Partners</title>
@@ -27,12 +27,11 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-  <body>
-    <div class="site-wrap" id="home-section">
+<body>
       <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
           <div class="site-mobile-menu-lang font-zize-lang">
-            <a class="text-primary">ESP</a><span class="mx-2" >/</span><a href="../en/">ENG</a>
+            <a href="../es/">ESP</a><span class="mx-2" >/</span><a class="text-primary" >ENG</a>
           </div>
           <div class="site-mobile-menu-close mt-3">
             <span class="icon-close2 js-menu-toggle"></span>
@@ -40,23 +39,23 @@
         </div>
         <div class="site-mobile-menu-body"></div>
       </div>
-
-    <header class="site-navbar-light py-4 js-sticky-header site-navbar-target" role="banner">
+        
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
       <div class="container">
-        <div class="row align-items-center">          
+        <div class="row align-items-center" data-aos="fade">          
           <div class="col-6 col-xl-2">
-            <div class="mb-0 site-logo"><a href="index" class="mb-0"><img class="img-fluid"  src="../assets/img/logo-gray.png"></a></div>
+            <div class="mb-0 site-logo"><a href="index.html" class="mb-0"><img id="logo" id="logo" class="img-fluid"  src="../assets/img/logo-home.png"></a></div>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">                
                 <li class="d-inline-block d-xl-none"><hr></li>
                 <li><a href="index.html#home" class="nav-link">Home</a></li>
-                <li><a href="index.html#criterio" class="nav-link">Criterio</a></li>
-                <li><a href="index.html#postularce" class="nav-link">Postulate</a></li>
+                <li><a href="index.html#criterion" class="nav-link">Criterion</a></li>
+                <li><a href="index.html#Apply" class="nav-link">Apply</a></li>
                 <li><a href="faqs.html" class="nav-link">FAQs</a></li>
-                <li><a href="contacto.html#contacto" class="nav-link">Contacto</a></li>
-                <li><button onclick="window.location='login.html'"class="d-none d-xl-block btn btn-outline-primary btn-sm">Login</button></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><button onclick="window.location='login.html'"class="d-none d-xl-block btn-ouline btn btn-outline-light btn-sm">Login</button></li>
                 <li class="d-inline-block d-xl-none"><button onclick="window.location='login-movil.html'"class="btn btn-outline-primary btn-sm my-3 ml-3">Login</button></li>
                 <li class="d-inline-block d-xl-none"><hr></li>
                 <li class="d-inline-block d-xl-none">                  
@@ -64,7 +63,7 @@
                 <button onclick="window.location='https://www.instagram.com/'" class="btn btn-outline-dark btn-circle"><i class="icon-instagram"></i></button>
                 </li>
                 <li class="d-inline-block d-xl-none mt-5">
-                  <a href="politica-de-privacidad.html" class="link-a">Politica de privacidad</a>
+                  <a href="privacy-policy.html" class="link-a">Privacy Policy</a><br>
                   <a href="cookies.html" class="link-a">Cookies</a>
                 </li>
               </ul>
@@ -77,57 +76,77 @@
 
 
     
-    <div class="site-section">
-      <div class="container">
-      <div class="container-fluid">
-        <div class="row align-items-center" style="margin-top: 4rem;">
-          <div class="col-md-10">
-            <h6 class="font-gray-5 mayus">LOREM IPSUM</h6>
-            <h1 class="display-3 text-primary">Términos & condiciones</h1>
-                        
+      <div class="site-section-cover-2 overlay" id="contact" style="background-image: url('../assets/img/contacto.jpg')">
+        <div class="container">
+          <div class="row justify-content-left">
+            <div class="col-lg-10 text-left" style="margin-top: 10rem;">
+              <h1 class="mb-5 display-a text-white ">Contact</h1>
+
+        <div class="card mt-5">
+          <div class="card-body container-fluid justify-content-center align-items-center">
+          <form>
+              <fieldset>                               
+                <div class="form-group row align-content-between">
+                  
+                  <div class="col-sm-5 my-2 form-label-group">
+                  <input type="text" name="nombre" id="nombre" value="" class="form-control" placeholder="Name" required>
+                  <label for="nombre">Name *</label>
+                  <div class="invalid-feedback"></div>
+                  <span id="error_nombre" class="error"></span> 
+                  </div>
+                  
+                  <div class="col-sm-5 my-2 form-label-group">
+                  <input type="text" name="apellido" id="apellido" value="" class="form-control" placeholder="Last name" required>
+                  <label for="apellido">Last name *</label>
+                  <div class="invalid-feedback"></div>
+                  <span id="error_apellido" class="error"></span> 
+                  </div>
+                </div>
+                <div class="form-group row mt-4">
+
+                  <div class="col-sm-5 my-2 form-label-group">
+                  <input type="text" name="tdc" id="tdc" value="" class="form-control" placeholder="phone" required>
+                  <label for="tdc">Telephone contact *</label>
+                  <div class="invalid-feedback"></div>
+                  <span id="error_tdc" class="error"></span> 
+                  </div>
+
+                  <div class="col-sm-5 my-2 form-label-group">
+                  <input type="text" name="email" id="email" value="" class="form-control" placeholder="Email" required>
+                  <label for="email">Email *</label>
+                  <div class="invalid-feedback"></div>
+                  <span id="error_email" class="error"></span> 
+                  </div>
+                  
+                </div>
+                <div class="form-group row">   
+                  <div class="col-lg-6 my-2 form-label-group">
+                  <textarea name="mensaje" id="mensaje" class="form-control" size="500" maxlength="500" rows="7" placeholder="Message *" required></textarea>         
+                  <span id="error_mensaje" class="error"></span> 
+                  </div>  
+                </div>
+              </fieldset>
+              <div align="left" class="mt-4 mb-2 align-items-center">
+                <button type="submit" class="btn btn-primary border-0 py-3 px-5">Submit Proposal</button>
+                <p class="mt-4 font-size-13 font-gray-5 ml-0">* Required fields.</p>
+              </div>
+              
+          </form>
+          </div>
+        </div> 
+
+            </div>
           </div>
         </div>
       </div>
-      </div>
-
-
-      <div class="container">
-      <div class="container-fluid">
-        <div class="row align-items-center" style="margin-top: 4rem;">
-          <div class="col-md-10 mb-5">
-            <h2 class="Titulo-a font-gray-7 mb-3">1. Lorem ipsum dolor sit amet</h2>
-            <p class="mb-2 texto-a">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie </p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie </p>            
-          </div>
-          <div class="col-md-10 mb-5">
-            <h2 class="Titulo-a font-gray-7 mb-3">2. Lorem ipsum dolor sit amet</h2>
-            <p class="mb-2 texto-a">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie </p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie </p>            
-          </div>
-          <div class="col-md-10 mb-5">
-            <h2 class="Titulo-a font-gray-7 mb-3">3. Lorem ipsum dolor sit amet</h2>
-            <p class="mb-2 texto-a">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie </p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie </p>            
-          </div>
-        </div>
-      </div>
-    </div>
-            
-            
-            
-          
-
-      
-
-    </div>
-    
-    <footer class="site-footer bg-blue-fo">
+    <div class="d-inline-block d-xl-none" style="margin-top: 10rem;"></div>  
+    <footer class="site-footer bg-blue-fo" style="margin-top: 15rem;">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col">
             <a href="index.html"><img width="150" class="img-fluid" src="../assets/img/logo-white.png"></a>
             <p class="text-white mb-4 mt-4 font-zize-direc">Blas Parera 3551, Olivos B1636. Buenos Aires, Argentina</p>
-            <a href="politica-de-privacidad.html" class="mr-4 link">Politica de privacidad</a>
+            <a href="privacy-policy.html" class="mr-4 link">Privacy Policy</a>
             <a href="cookies.html" class="link">Cookies</a>
           </div>            
           <div align="right">
@@ -137,9 +156,7 @@
         </div>        
       </div>  
     </footer>
-  </div>
-
-    
+  </div>    
   </body>
   <script src="../assets/js/jquery-3.3.1.min.js"></script>
   <script src="../assets/js/jquery-migrate-3.0.1.js"></script>  
@@ -152,5 +169,5 @@
   <script src="../assets/js/validate-form.js"></script>
   <script src="../assets/js/owl.carousel.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-</html>
+  </html>
 

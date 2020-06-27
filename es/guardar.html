@@ -28,21 +28,19 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
   <body class="bg-image-g">
-    
-    <div class="site-section-movil">
-    <div class="container">
-      <div class="abs-center">
-      <div class="col-lg-5">
+  <div class="modal-movil">
+    <div class="modal-dialog modal-dialog-centered modal-sm border-0">
+      <div class="modal-content py-2">
       <div class="text-center">
-        <img class="img-fluid mb-5" width="200"  src="../assets/img/logo-white.png">
-      </div>
-      <div class="card">
-        <div class="card-body">
-        <div>
-          <p class="font-gray-9">Tu formulario será guardado para que puedas terminar de completarlo más tarde. Por favor, ingresá el email a donde deseas recibir el link del formulario:</p>
-        </div>     
-        <form>
-            <fieldset>                
+          <img class="img-fluid mb-3" width="200"  src="../assets/img/logo-white.png">
+        </div>   
+        <div class="card">
+          <div class="card-body">
+          <div class="py-3 ">
+             <p class="font-gray-9">Tu formulario será guardado para que puedas terminar de completarlo más tarde. Por favor, ingresá el email a donde deseas recibir el link del formulario:</p>
+          </div>     
+          <form>
+                <fieldset>                
               <div class="form-group">
                 <div class="my-4 form-label-group lef">
                   <input type="email" name="emailid" id="emailid" value="" class="form-control" placeholder="Email" required>
@@ -51,18 +49,19 @@
                   <span id="error_emailid" class="error"></span>  
                   </div> 
               </div>
-            </fieldset>             
-            <div class="card-footer text-center">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal2">Completar mas tarde</button>
-            </div>
-        </form>                   
-      </div>              
-      </div>
+            </fieldset>
+            
+          </div>                          
+          <div class="card-footer py-3 text-center">
+                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal2">Completar mas tarde</button>
+          </div>
+          </form>             
+        </div>
       </div>
     </div>
-    </div> 
-    </div>
+  </div> 
 
+    
   
 
 <div class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">

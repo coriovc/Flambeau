@@ -459,7 +459,21 @@ h6, .h6 {
 
 .display-fqs {
   font-weight: 200;
-  font-size: 2.8rem;}
+  font-size: 2.8rem;
+  font-family: 'Martel' !important;}
+
+  @media (min-width: 360px) {
+    .display-fqs {
+      font-size: 2rem; } }
+  @media (min-width: 768px) {
+    .display-fqs {
+      font-size: 2rem; } }
+  @media (min-width: 992px) {
+    .display-fqs {
+      font-size: 2.8rem; } }
+  @media (min-width: 1200px) {
+    .display-fqs {
+      font-size: 2.8rem; } }
 
 .display-sub-title {
   line-height: 1.3;
@@ -2120,7 +2134,8 @@ fieldset:disabled a.btn {
 .btn-primary {
   color: #fff;
   background-color: #52c3f8;
-  border-color: #fff; }
+  border-color: #fff;
+outline: none !important;}
   .btn-primary:hover {
     color: #fff;
     background-color: #0E419B;
@@ -4859,7 +4874,7 @@ a.close.disabled {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 100;
   display:block;
   width: 100%;
   height: 100%;
@@ -4869,8 +4884,16 @@ a.close.disabled {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 0 1rem 0 1rem;
+  margin: 0.5rem;
   pointer-events: none; }
+
+.modal-card {
+  position: absolute;
+  width: auto;
+  margin:  0.5rem ;
+  pointer-events: none;
+   }
+
   .modal.fade .modal-dialog {
     -webkit-transition: -webkit-transform 0.3s ease-out;
     transition: -webkit-transform 0.3s ease-out;
@@ -4905,6 +4928,20 @@ a.close.disabled {
   .modal-dialog-scrollable .modal-body {
     overflow-y: auto; }
 
+.modal-centered {
+  display: flex;  
+  -webkit-box-align: center;
+  -ms-flex-align: right;
+  align-items: center;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+}
+  .modal-centered::before {
+    height: calc(100vh - 1rem);
+    content: ""; }
+
+
+
 .modal-dialog-centered {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4935,17 +4972,14 @@ a.close.disabled {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
   outline: 0; }
 
 .modal-backdrop {
@@ -5016,7 +5050,7 @@ a.close.disabled {
   height: 50px;
   overflow: scroll; }
 
-@media (min-width: 476px) {
+@media (min-width: 360px) {
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto; }
