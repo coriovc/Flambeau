@@ -289,7 +289,7 @@
         <div class="container">
          
         <div>
-          <h1 class="col-lg-9 font-zize-3rem py-4 ml-2 text-white">Apply</h1>
+          <h1 class="col-lg-9 display-pos py-4 ml-2 text-white">Apply</h1>
           <div class="pb-4 ml-4">
             <p class="font-1rem text-white">It is time to fan the flame.</p>
             <p class="font-1rem text-white">Take your time to correctly complete all the fields, you also have the option to continue later.</p>
@@ -309,14 +309,14 @@
                   <input type="text" name="name" id="name" value="" class="form-control" placeholder="Name and lastname" required>
                   <label for="name">Name and last name *</label>
                   <div class="invalid-feedback"></div>
-                  <span id="error_name" class="error"></span> 
+                  <span id="error_en_name" class="error"></span> 
                   </div>
                   
                   <div class="col-lg-5 my-4 form-label-group email">
                   <input type="email" name="emailid" id="emailid" value="" class="form-control" placeholder="Corporate Email" required>
                   <label for="emailid">Corporate Email *</label>                  
                   <div class="invalid-feedback"></div>
-                  <span id="error_emailid" class="error"></span>  
+                  <span id="error_en_emailid" class="error"></span>  
                   </div>
                   
                 </div>                
@@ -326,7 +326,7 @@
                   <input type="text" name="phone" id="phone" value="" class="form-control" placeholder="Phone" required>
                   <label for="inputPhone">Phone *</label>                  
                   <div class="invalid-feedback"></div>
-                  <span id="error_phone" class="error"></span>
+                  <span id="error_en_phone" class="error"></span>
 
                   </div>
 
@@ -334,7 +334,7 @@
                   <input type="text" name="company" id="company" value="" class="form-control" placeholder="Business" required>
                   <label for="company">Business *</label>                  
                   <div class="invalid-feedback"></div>
-                  <span id="error_company" class="error"></span>   
+                  <span id="error_en_company" class="error"></span>   
                   </div>
 
                 </div>
@@ -366,14 +366,14 @@
                       <option value="22">Other</option>
                     </select>                      
                       <div class="invalid-feedback"></div>
-                      <span id="error_sector" class="error"></span>
+                      <span id="error_en_sector" class="error"></span>
                   </div>                  
 
                   <div class="col-lg-5 my-4 form-label-group web">
                   <input type="text" name="web" value="" id="web" class="form-control" placeholder="Website" required>
                   <label for="web">Website *</label>                  
                   <div class="invalid-feedback"></div>
-                  </span><span id="error_web" class="error"></span>   
+                  </span><span id="error_en_web" class="error"></span>   
                   </div>
 
                 </div>
@@ -383,7 +383,7 @@
                   <input type="text" name="city" id="city" value="" class="form-control" placeholder="City" required>
                   <label for="city">City *</label>                  
                   <div class="invalid-feedback"></div>
-                  <span id="error_city" class="error"></span>  
+                  <span id="error_en_city" class="error"></span>  
                   </div>
                   
                   <div class="col-lg-5 my-4 inv">  
@@ -400,7 +400,7 @@
                         </select>
                         
                         <div class="invalid-feedback"></div>
-                        <span id="error_inv" class="error"></span>
+                        <span id="error_en_inv" class="error"></span>
                   </div>
 
               </div>
@@ -422,7 +422,7 @@
                   <input type="text" name="fau" value="" id="fau" class="form-control" placeholder="Annual billing in USD" required>
                   <label for="fau">Annual billing in USD *</label>                  
                   <div class="invalid-feedback"></div>
-                  <span id="error_fau" class="error"></span>                     
+                  <span id="error_en_fau" class="error"></span>                     
                   </div>
 
                   <div class="col-lg-5 my-4 form-label-group" id="div-si" style="display:none;" >
@@ -445,7 +445,7 @@
                   <input type="text" name="linkedin" value="" id="linkedin" class="form-control" placeholder="Add Linkedin" required>
                   <label for="linkedin">Add Linkedin*</label>                  
                   <div class="invalid-feedback"></div>
-                  <span id="error_linkedin" class="error"></span> 
+                  <span id="error_en_linkedin" class="error"></span> 
                   </div>
 
                   <div class="col-sm-6 my-4">                      
@@ -462,36 +462,43 @@
             <fieldset>            
               <div class="form-group row">  
                 <legend class="my-4 ml-3 text-blue font-zize-1-3rem"><strong>Attach your Proposal</strong></legend>                
+                  
                   <div class="col-lg-5 my-4 ap">                    
                     <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="file1" aria-describedby="file1" onchange="this.form.file1.value = this.files.length ? this.files[0].name : ''" required>
-                        <label class="custom-file-label" for="file1">
-                        <input style="border:none;width: 100%;margin: 0;" type="text" name="file1" placeholder="Attach your proposal*"></label>
-                      </div>                      
-                      <div class="input-group-append" title="Attach pitch or similar">
-                      <a href="#!" id="icon"  onmouseover="entra(this)" onmouseout="salir(this)"><img style="margin-bottom: -1.5rem; margin-left: 0.5rem;" width="24" src="../assets/img/icon-upload.png" alt="icon"></a></div>
+                    <div class="custom-file">
+                      <input class="form-control" type="text" name="files" placeholder="Attach your proposal *" readonly>
+                    </div> 
+                    <div class="input-group-append" id="btn-adj1-en">                      
+                      <div class="image-upload" id="icon"  onmouseover="entra(this)" onmouseout="salir(this)">
+                        <label for="file-input">
+                        <img style="cursor: pointer; margin-bottom: -1.5rem; margin-left: 0.5rem;" width="24" src="../assets/img/icon-upload.png" alt="icon">
+                      </label>
+                        <input type="file" style="opacity: 0; width: 10px; position: relative; z-index: 2;" id="file-input" onchange="this.form.files.value = this.files.length ? this.files[0].name : ''" required></div>
                     </div>
+                    </div>                    
                   </div>
-                  
 
-                  <div class="col-lg-5 my-4">                    
+                  <div class="col-lg-5 my-4 ap">                    
                     <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="file1"  aria-describedby="file1" onchange="this.form.file1.value = this.files.length ? this.files[0].name : ''">
-                        <label class="custom-file-label" for="file1">
-                          <input style="border:none;width: 100%;margin: 0;" class="file-text" type="text" name="file1" placeholder="Additional information (videos, images, etc)"></label>                      
-                      </div>
-                      <div class="input-group-append" title="Add additional information: Videos, images, presentations, etc.">
-                      <a href="#!" id="icon" onmouseover="entra(this)" onmouseout="salir(this)"><img style="margin-bottom: -1.5rem; margin-left: 0.5rem;" width="24" src="../assets/img/icon-upload.png" alt="icon"></a></div>
+                    <div class="custom-file">
+                      <input class="form-control" type="text" name="files1" placeholder="Additional information (videos, images, etc)" readonly>
+                    </div> 
+                    <div class="input-group-append" id="btn-adj2-en">                      
+                      <div class="image-upload" id="icon"  onmouseover="entra(this)" onmouseout="salir(this)">
+                        <label for="file-input-a">
+                        <img style="cursor: pointer; margin-bottom: -1.5rem; margin-left: 0.5rem;" width="24" src="../assets/img/icon-upload.png" alt="icon">
+                      </label>
+                        <input type="file" style="opacity: 0; width: 10px; position: relative; z-index: 2;" id="file-input-a" onchange="this.form.files1.value = this.files.length ? this.files[0].name : ''" required></div>
                     </div>
+                    </div>                    
                   </div>
+
                 </div>
 
                 <div class="form-group row"> 
                   <div class="col-lg-5 my-4 form-label-group cste">
                   <textarea style="line-height: 1.35 !important;" name="cste" id="cste" class="form-control" size="500" maxlength="500" rows="10" placeholder="Tell us about your company (Max. 500 characters) *" required></textarea>         
-                  <span id="error_cste" class="error"></span> 
+                  <span id="error_en_cste" class="error"></span> 
                   </div>                  
                 </div> 
               </fieldset>
@@ -509,7 +516,7 @@
                 </div>
                 <div class="d-none d-lg-block">
                 <div class="row ml-1 align-items-center mt-5">
-                <button type="submit" name="btn_send" id="btn_send" class="btn btn-primary border-0 py-2 px-5" >Send</button>
+                <button type="submit" class="send btn btn-primary border-0 py-2 px-5">Send</button>
                 <div class="row ml-1 align-items-center">              
                 <i class="icon-angle-right p-2 text-white"></i><a href="guardar.html" class="btn-p link-g  text-white ">Save and continue later</a>
               </div>
@@ -520,7 +527,7 @@
             <div class="d-inline-block d-xl-none col text-center">                
                 <div class="align-items-center">
                 <div class="py-3">
-                <button type="submit" name="btn_send" id="btn_send" class="btn btn-primary border-0 col">Send</button></div>
+                <button type="submit" class="send btn btn-primary border-0 col">Send</button></div>
                 <div class="row align-items-center ml-3">              
                 <i class="icon-angle-right p-2 text-white"></i><a href="guardar.html" class="btn-p link-g text-white ">Save and continue later</a>
               </div>                 
@@ -584,5 +591,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/bootstrap-select.js"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5"></script>
+  <!-- partial -->
+  <script  src="../assets/js/tool.js"></script>
 </html>
 

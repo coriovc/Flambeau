@@ -51,7 +51,7 @@
       <div class="container">
         <div class="row align-items-center" data-aos="fade">          
           <div class="col-6 col-xl-2">
-            <div class="mb-0 site-logo"><a href="index" class="mb-0"><img id="logo" id="logo" class="img-fluid"  src="../assets/img/logo-home.png"></a></div>
+            <div class="mb-0 site-logo"><a href="index.html" class="mb-0"><img id="logo" id="logo" class="img-fluid"  src="../assets/img/logo-home.png"></a></div>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -289,7 +289,7 @@
         <div class="container">
          
         <div>
-          <h1 class="col-lg-9 font-zize-3rem py-4 ml-2 text-white">Postularme</h1>
+          <h1 class="col-lg-9 display-pos py-4 ml-2 text-white">Postularme</h1>
           <div class="pb-4 ml-4">
             <p class="font-1rem text-white">Es hora de avivar la llama.</p>
             <p class="font-1rem text-white">Tomate tu tiempo para completar correctamente todos los campos, también tenés la opción de continuar más tarde.</p>
@@ -323,7 +323,7 @@
                 <div class="form-group row">
                   
                   <div class="col-lg-5 my-4 form-label-group phone">
-                  <input type="text" name="phone" id="phone" value="" class="form-control" placeholder="Telefono" required>
+                  <input type="tel" name="phone" id="phone" value="" class="form-control" placeholder="Telefono" required>
                   <label for="inputPhone">Telefono *</label>                  
                   <div class="invalid-feedback"></div>
                   <span id="error_phone" class="error"></span>
@@ -338,11 +338,11 @@
                   </div>
 
                 </div>
-                <div class="form-group row sector">
-                <div class="col-lg-5 my-4" style="margin-top: 1rem;">  
+                <div class="form-group row ">
+                <div class="col-lg-5 my-4 sector" style="margin-top: 1rem;">  
                     <label class="label-select1" for="sector">Sector *</label>
                     <select class="form-control selectpicker" data-style="btn-transparent" name="sector" id="sector" data-size="6" required>
-                      <option value="0">seleciona</option>
+                      <option value="">seleciona</option>
                       <option value="2">Adtech y Marketing Digital</option>
                       <option value="3">Big Data y Analytics</option>
                       <option value="4">Buildtech</option>
@@ -419,7 +419,7 @@
                   </div>
 
                   <div class="col-lg-5 my-4 form-label-group fau">
-                  <input type="text" name="fau" value="" id="fau" class="form-control" placeholder="Facturacion anual en USD" required>
+                  <input type="number" name="fau" value="" id="fau" class="form-control" placeholder="Facturacion anual en USD" required>
                   <label for="fau">Facturacion anual en USD *</label>                  
                   <div class="invalid-feedback"></div>
                   <span id="error_fau" class="error"></span>                     
@@ -462,31 +462,39 @@
             <fieldset>            
               <div class="form-group row">  
                 <legend class="my-4 ml-3 text-blue font-zize-1-3rem"><strong>Adjunta tu Propuesta</strong></legend>                
+                  
                   <div class="col-lg-5 my-4 ap">                    
                     <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="file1" aria-describedby="file1" onchange="this.form.file1.value = this.files.length ? this.files[0].name : ''" required>
-                        <label class="custom-file-label" for="file1">
-                        <input style="border:none;width: 100%;margin: 0;" type="text" name="file1" placeholder="Ajuntar tu propuesta*"></label>
-                      </div>                      
-                      <div class="input-group-append" title="Adjuntar pitch o similar">
-                      <a href="#!" id="icon"  onmouseover="entra(this)" onmouseout="salir(this)"><img style="margin-bottom: -1.5rem; margin-left: 0.5rem;" width="24" src="../assets/img/icon-upload.png" alt="icon"></a></div>
+                    <div class="custom-file">
+                      <input class="form-control" type="text" name="files" placeholder="Ajuntar tu propuesta *" readonly>
+                    </div> 
+                    <div class="input-group-append" id="btn-adj1">                      
+                      <div class="image-upload" id="icon"  onmouseover="entra(this)" onmouseout="salir(this)">
+                        <label for="file-input">
+                        <img style="cursor: pointer; margin-bottom: -1.5rem; margin-left: 0.5rem;" width="24" src="../assets/img/icon-upload.png" alt="icon">
+                      </label>
+                        <input type="file" style="opacity: 0; width: 10px; position: relative; z-index: 2;" id="file-input" onchange="this.form.files.value = this.files.length ? this.files[0].name : ''" required></div>
                     </div>
+                    </div>                    
                   </div>
-                  
 
-                  <div class="col-lg-5 my-4">                    
+                  <div class="col-lg-5 my-4 ap">                    
                     <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="file1"  aria-describedby="file1" onchange="this.form.file1.value = this.files.length ? this.files[0].name : ''">
-                        <label class="custom-file-label" for="file1">
-                          <input style="border:none;width: 100%;margin: 0;" class="file-text" type="text" name="file1" placeholder="Informacion adicional (videos, imagenes, etc)"></label>                      
-                      </div>
-                      <div class="input-group-append" title="Agrega informacion adicional: Videos, imágenes, presentaciones, etc.">
-                      <a href="#!" id="icon" onmouseover="entra(this)" onmouseout="salir(this)"><img style="margin-bottom: -1.5rem; margin-left: 0.5rem;" width="24" src="../assets/img/icon-upload.png" alt="icon"></a></div>
+                    <div class="custom-file">
+                      <input class="form-control" type="text" name="files1" placeholder="Informacion adicional (videos, imagenes, etc)" readonly>
+                    </div> 
+                    <div class="input-group-append" id="btn-adj2">                      
+                      <div class="image-upload" id="icon"  onmouseover="entra(this)" onmouseout="salir(this)">
+                        <label for="file-input-a">
+                        <img style="cursor: pointer; margin-bottom: -1.5rem; margin-left: 0.5rem;" width="24" src="../assets/img/icon-upload.png" alt="icon">
+                      </label>
+                        <input type="file" style="opacity: 0; width: 10px; position: relative; z-index: 2;" id="file-input-a" onchange="this.form.files1.value = this.files.length ? this.files[0].name : ''" required></div>
                     </div>
+                    </div>                    
                   </div>
+
                 </div>
+
 
                 <div class="form-group row"> 
                   <div class="col-lg-5 my-4 form-label-group cste">
@@ -509,7 +517,7 @@
                 </div>
                 <div class="d-none d-lg-block">
                 <div class="row ml-1 align-items-center mt-5">
-                <button type="submit" name="btn_send" id="btn_send" class="btn btn-primary border-0 py-2 px-5" >Enviar</button>
+                <button type="submit" class="send btn btn-primary border-0 py-2 px-5">Enviar</button>
                 <div class="row ml-1 align-items-center">              
                 <i class="icon-angle-right p-2 text-white"></i><a href="guardar.html" class="btn-p link-g  text-white ">Guardar y continuar mas tarde</a>
               </div>
@@ -520,7 +528,7 @@
             <div class="d-inline-block d-xl-none col text-center">                
                 <div class="align-items-center">
                 <div class="py-3">
-                <button type="submit" name="btn_send" id="btn_send" class="btn btn-primary border-0 col">Enviar</button></div>
+                <button type="submit" class="send btn btn-primary border-0 col">Enviar</button></div>
                 <div class="row align-items-center ml-3">              
                 <i class="icon-angle-right p-2 text-white"></i><a href="guardar.html" class="btn-p link-g text-white ">Guardar y continuar mas tarde</a>
               </div>                 
@@ -583,6 +591,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <script src="../assets/js/bootstrap-select.js"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5"></script>
+  <!-- partial -->
+  <script  src="../assets/js/tool.js"></script>
 </html>
 

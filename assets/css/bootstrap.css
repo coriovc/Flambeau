@@ -1797,9 +1797,6 @@ pre {
   .form-control::placeholder {
     color: #adacb2;
     }
-  .form-control:disabled, .form-control[readonly] {
-    background-color: #e9ecef;
-    opacity: 1; }
 
 select.form-control:focus::-ms-value {
   color: #838587;
@@ -3328,7 +3325,6 @@ input[type="button"].btn-block {
 
 .custom-file-input:focus ~ .custom-file-label {
   border-color: #80bdff;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .custom-file-input[disabled] ~ .custom-file-label,

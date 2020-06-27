@@ -88,30 +88,30 @@
               <fieldset>                               
                 <div class="form-group row align-content-between">
                   
-                  <div class="col-sm-5 my-2 form-label-group">
-                  <input type="text" name="nombre" id="nombre" value="" class="form-control" placeholder="Name" required>
-                  <label for="nombre">Name *</label>
+                  <div class="col-sm-5 my-2 form-label-group name">
+                  <input type="text" name="name" id="name" value="" class="form-control" placeholder="Name" required>
+                  <label for="name">Name *</label>
                   <div class="invalid-feedback"></div>
-                  <span id="error_nombre" class="error"></span> 
+                  <span id="error_name" class="error"></span> 
                   </div>
                   
-                  <div class="col-sm-5 my-2 form-label-group">
-                  <input type="text" name="apellido" id="apellido" value="" class="form-control" placeholder="Last name" required>
-                  <label for="apellido">Last name *</label>
+                  <div class="col-sm-5 my-2 form-label-group last-name">
+                  <input type="text" name="last-name" id="last-name" value="" class="form-control" placeholder="Last name" required>
+                  <label for="last-name">Last name *</label>
                   <div class="invalid-feedback"></div>
-                  <span id="error_apellido" class="error"></span> 
+                  <span id="error_last-name" class="error"></span> 
                   </div>
                 </div>
                 <div class="form-group row mt-4">
 
-                  <div class="col-sm-5 my-2 form-label-group">
-                  <input type="text" name="tdc" id="tdc" value="" class="form-control" placeholder="phone" required>
-                  <label for="tdc">Telephone contact *</label>
+                  <div class="col-sm-5 my-2 form-label-group phone">
+                  <input type="number" name="phone" id="phone" value="" class="form-control" placeholder="Phone" required>
+                  <label for="phone">Telephone contact *</label>
                   <div class="invalid-feedback"></div>
-                  <span id="error_tdc" class="error"></span> 
+                  <span id="error_phone" class="error"></span> 
                   </div>
 
-                  <div class="col-sm-5 my-2 form-label-group">
+                  <div class="col-sm-5 my-2 form-label-group email">
                   <input type="text" name="email" id="email" value="" class="form-control" placeholder="Email" required>
                   <label for="email">Email *</label>
                   <div class="invalid-feedback"></div>
@@ -120,21 +120,23 @@
                   
                 </div>
                 <div class="form-group row">   
-                  <div class="col-lg-6 my-2 form-label-group">
-                  <textarea name="mensaje" id="mensaje" class="form-control" size="500" maxlength="500" rows="7" placeholder="Message *" required></textarea>         
-                  <span id="error_mensaje" class="error"></span> 
+                  <div class="col-lg-6 my-2 form-label-group message">
+                  <textarea name="message" id="message" class="form-control" size="500" maxlength="500" rows="7" placeholder="Message *" required></textarea>         
+                  <span id="error_message" class="error"></span> 
                   </div>  
                 </div>
               </fieldset>
-              <div align="left" class="mt-4 mb-2 align-items-center">
-                <button type="submit" class="btn btn-primary border-0 py-3 px-5">Submit Proposal</button>
+              <div align="left" class="mt-4 mb-2 align-items-center d-none d-xl-block">
+                <button type="submit" class="send btn btn-primary border-0 py-3 px-5">Send</button>
                 <p class="mt-4 font-size-13 font-gray-5 ml-0">* Required fields.</p>
               </div>
-              
           </form>
           </div>
-        </div> 
-
+              <div align="center" class="align-items-center d-inline-block d-xl-none">
+                <p class="mb-4 font-size-13 font-gray-5">* Required fields.</p>
+                <button type="submit" class="send btn btn-primary border-0 py-3 col">Send</button>
+              </div>
+            </div> 
             </div>
           </div>
         </div>
@@ -166,7 +168,7 @@
   <script src="../assets/js/aos.js"></script>
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/script.js"></script>  
-  <script src="../assets/js/validate-form.js"></script>
+  <script src="../assets/js/validate-form-contact.js"></script>
   <script src="../assets/js/owl.carousel.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   </html>

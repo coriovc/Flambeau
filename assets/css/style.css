@@ -170,6 +170,10 @@ html {
     .display-c {
       font-size: 2.6875rem; } }
 
+.display-pos {
+  font-size: 3rem;
+  font-family: 'Martel';} }
+
 .Titulo-a{
   font-size: 1.5rem;
   font-weight: 500;
@@ -2505,7 +2509,6 @@ option:hover{
   font-weight: 600;
   color: #dc3545;
   background-color:transparent;
-  margin-left: 0.8rem;
 }
 
 
@@ -2624,3 +2627,36 @@ div.ricki
     height:auto;
     width:auto;
     z-index: -100;
+
+  }
+
+
+.tippy-tooltip.custom-theme {
+  background-color: #52c3f8;
+  color: #fff;
+  font-size: 15px;
+}
+
+.tooltip-span {
+  color: #33658A;
+  text-align: center;
+  display: block;
+  padding-top: 5px;
+}
+
+.image-upload > input
+{
+    display: none;
+}
+
+.image-upload img
+{
+    cursor: pointer;
+}
+
+.input-file{
+  opacity: 0; 
+  width: 10px; 
+  position: relative; 
+  z-index: 2;
+}
