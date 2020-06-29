@@ -19,6 +19,7 @@ $(document).ready(function() {
 		else
 		{
 			$("#error_name").hide();
+			$("#error_en_name").hide();
 		}
 		//apellido
 		if ( trim($("#last-name").val()) == '' )
@@ -34,6 +35,7 @@ $(document).ready(function() {
 		else
 		{
 			$("#error_last-name").hide();
+			$("#error_en_last-name").hide();
 		}
 		//telenono
 		if ( trim($("#phone").val()) == '' )
@@ -64,6 +66,7 @@ $(document).ready(function() {
 			else
 			{
 				$("#error_phone").hide();
+				$("#error_en_phone").hide();
 			}
 		}
 		//email
@@ -81,6 +84,7 @@ $(document).ready(function() {
 		else
 		{
 			$("#error_email").hide();
+			$("#error_en_email").hide();
 		}
 				
 		//mensaje
@@ -97,6 +101,7 @@ $(document).ready(function() {
 		else
 		{
 			$("#error_message").hide();
+			$("#error_en_message").hide();
 		}
 	});
 });
