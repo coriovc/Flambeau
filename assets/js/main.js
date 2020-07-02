@@ -305,10 +305,14 @@ jQuery(document).ready(function($) {
     $(window).scroll(function(){
     	 var st = $(this).scrollTop();
         if(st > 0) {
-            $('#logo').attr('src','../assets/img/logo-gray.png')
+         $('#logo').attr('src','../assets/img/logo-gray.png');
+         $('.img-t').addClass('img-fluid-2');
+         $('.img-t').removeClass('img-fluid');
         }
         if(st < 1) {        
-         $('#logo').attr('src','../assets/img/logo-home.png');   
+         $('#logo').attr('src','../assets/img/logo-home.png');
+         $('.img-t').addClass('img-fluid');
+         $('.img-t').removeClass('img-fluid-2');   
         }
     });
 

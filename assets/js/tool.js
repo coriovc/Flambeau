@@ -1,5 +1,5 @@
 tippy('#btn-adj1', {
-  content: "Adjuntar pitch o similar.",
+  content: "Adjuntar Pitch Deck o similar.",
   placement: 'bottom',
   theme: 'custom',
   arrow: false,
@@ -13,7 +13,7 @@ tippy('#btn-adj2', {
 });
 
 tippy('#btn-adj1-en', {
-  content: "Attach pitch or similar.",
+  content: "Attach pitch Deck or similar.",
   placement: 'bottom',
   theme: 'custom',
   arrow: false,

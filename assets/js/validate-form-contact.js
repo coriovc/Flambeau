@@ -51,13 +51,13 @@ $(document).ready(function() {
 		else
 		{
 			var value = trim($("#phone").val());
-			var phonefilter = /^(?!(0))\d{8}$/;
+			var phonefilter = /^[0-9]+\d{7}$/;
 			if ( !phonefilter.test(value) )
 			{
 				$('.phone').addClass('was-validated');
-				$("#error_phone").html('El numero de telefono debe tener 8 digitos.');
+				$("#error_phone").html('El numero de telefono debe tener mas de 8 digitos.');
 				$("#error_phone").show();
-				$("#error_en_phone").html('The phone number must have 8 digits.');
+				$("#error_en_phone").html('The phone number must have more than 8 digits.');
 				$("#error_en_phone").show();
 				$("#phone").focus();
 				return false;

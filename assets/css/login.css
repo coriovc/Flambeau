@@ -39,7 +39,7 @@
 }
 
 .login-more {
-  width: calc(100% - 600px);
+  width: calc(100% - 700px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -60,7 +60,7 @@
 }
 
 .login-form {
-  width: 600px;
+  width: 700px;
   min-height: 100vh;
   display: block;
   background-color: #fff;

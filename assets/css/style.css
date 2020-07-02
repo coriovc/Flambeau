@@ -110,12 +110,21 @@ html {
   font-size: 1rem;
 }
 
+.font-zize-g {
+  color: #7b7b7b;
+  font-size: 0.75rem;
+}
+
 .font-zize-lang {
   font-size: 1rem;
 }
 
 .font-zize-2rem {
   font-size: 2rem ;
+}
+
+.font-land{
+  font-size: 1.1rem;
 }
 
 @media (min-width: 360px) {
@@ -193,11 +202,18 @@ html {
 
 .Titulo-a{
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
+  color: #595959;
+} 
+
+.Titulo-pp{
+  font-size: 1.6rem;
+  font-weight: 450;
+  color: #595959;
 } 
 
 .texto-a{
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 
@@ -211,10 +227,12 @@ html {
 
 .font-zize-1-3rem {
   font-size: 1.3rem !important;
+  font-weight: 200;
 }
 
 .font-zize-direc {
   font-size: 0.8rem !important;
+  color: #939393;
 }
 
 .font-zize-respuesta {
@@ -246,13 +264,25 @@ html {
   color: #939393; }
 
 .font-gray-8 {
-  color: #7b7b7b; }
+  color: #7b7b7b;}
+
+.font-nf{
+  color: #7b7b7b;  
+  font-size: 1.3rem !important;
+  font-weight: 300;
+}
+
+.font-al{
+  color: #7b7b7b;  
+  font-size:  1.0625rem !important;
+  font-weight: 300;
+}
 
 .font-gray-9 {
   color: #636363 #4d4d4d; }
 
 .font-gray-10 {
-  color: #353535 !important; }
+  color: #595959 !important; }
 
 .border-gray-1 {
   border-color: #f7f7f7; }
@@ -363,12 +393,6 @@ html {
     color: #fff;
     background: #52c3f8; }
 
-body {
-  line-height: 1.7;
-  color: #364d59 !important;
-  font-weight: 300;
-  font-size: 1rem; }
-
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -395,12 +419,6 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: none; }
-
-h1, h2, h3, h4, h5,
-.h1, .h2, .h3, .h4, .h5 {
-  font-weight: 300;
-  color: #ddd; 
-}
 
 
 select{
@@ -714,7 +732,6 @@ option:hover{
   .site-navbar .site-logo {
     margin: 0;
     padding: 0;
-    font-size: 1.7rem;
      }
     .site-navbar .site-logo a {
       color: #fff; }
@@ -740,11 +757,11 @@ option:hover{
         margin-left: 15px;
         margin-right: 15px;
         padding: 20px 0px;
-        color: rgba(255,255,255,0.6) !important;
+        color: rgba(255,255,255,0.4) ;
         display: inline-block;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: #52c3f8; }
+          color: #fff !important; }
       .site-navbar .site-navigation .site-menu > li.active > a {
         color: #52c3f8 !important; }
     .site-navbar .site-navigation .site-menu .has-children {
@@ -858,7 +875,6 @@ option:hover{
   .site-navbar-light .site-logo {
     margin: 0;
     padding: 0;
-    font-size: 1.7rem;
      }
     .site-navbar-light .site-logo a {
       color: #fff; }
@@ -1161,6 +1177,8 @@ option:hover{
       color: #52c3f8; }
     .sticky-wrapper.is-sticky .site-navbar ul li a {
       color: #000 !important; }
+    .sticky-wrapper.is-sticky .site-navbar ul li a:hover {
+      color: #666666 !important; }
       .sticky-wrapper.is-sticky .site-navbar ul li a.active {
         color: #52c3f8 !important; }
   .sticky-wrapper .shrink {
@@ -2395,7 +2413,7 @@ option:hover{
     width: 100%;
     height: 100%;
     padding: 1rem 0;
-    background: linear-gradient(to bottom, rgba(28, 52, 95, 0.3) 0%, rgba(28, 52, 95, 1) 50%, #1c345f 100%), url("../img/img-2.jpg");
+    background: url("../img/Bg-postularte.jpg");
     background-position: center;
     background-repeat: repeat;
     background-attachment: scroll;
@@ -2438,6 +2456,15 @@ option:hover{
 .link-p:hover{
   color:#52c3f8 !important;
 }
+
+.link-p a{
+  color:#ddd  !important;
+}
+
+.link-p a:hover{
+  color:#52c3f8 !important;
+}
+
 
 
 .enline{
@@ -2607,9 +2634,8 @@ div.ricki
    content:url(../img/logo-gray.png);
 }​
 
-.font-p-nf{
-  font-size: 1.2rem !important;
-  line-height: 1.3;
+.p-nf{
+  font-size: 1.3rem !important;
 }
 
 .label-select1{

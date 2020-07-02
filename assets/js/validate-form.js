@@ -52,13 +52,13 @@ $(document).ready(function() {
 		else
 		{
 			var value = trim($("#phone").val());
-			var phonefilter = /^(?!(0))\d{8}$/;
+			var phonefilter = /^[0-9]+\d{7}$/;
 			if ( !phonefilter.test(value) )
 			{
 				$('.phone').addClass('was-validated');
-				$("#error_phone").html('El numero de telefono debe tener 8 digitos.');
+				$("#error_phone").html('El numero de telefono debe tener mas de 8 digitos.');
 				$("#error_phone").show();
-				$("#error_en_phone").html('The phone number must have 8 digits.');
+				$("#error_en_phone").html('The phone number must have more than 8 digits.');
 				$("#error_en_phone").show();
 				$("#phone").focus();
 				return false;
@@ -149,7 +149,14 @@ $(document).ready(function() {
 		else
 		{
 			$("#error_inv").hide();
+			$("#error_en_inv").hide();
 		}
+
+		//inversion previa
+		
+		
+		
+
 		//facturacion anual
 		if ( trim($("#fau").val()) == '' )
 		{
@@ -166,26 +173,12 @@ $(document).ready(function() {
 			$("#error_fau").hide();
 			$("#error_en_fau").hide();
 		}
-		//linkedin
-		if ( trim($("#linkedin").val()) == '' )
-		{
-			$('.linkedin').addClass('was-validated');
-			$("#error_linkedin").html('ingrese un linkedin');
-			$("#error_linkedin").show();
-			$("#error_en_linkedin").html('Add a linkedin');
-			$("#error_en_linkedin").show();
-			$("#linkedin").val('').focus();
-			return false;
-		}
-		else
-		{
-			$("#error_linkedin").hide();
-			$("#error_en_linkedin").hide();
-		}
+		
 		//adjuntar propuesta
-		if ( trim($("#ap").val()) == '' )
+		var fileval = $('#file-input').val(); 
+        if(fileval=='')
 		{
-			$('.ap').addClass('was-validated');
+			$('.ap').addClass('is-invalid');
 			$("#error_ap").html('Ajunte una propuesta.');
 			$("#error_ap").show();
 			$("#error_en_ap").html('Attach a proposal.');
@@ -197,6 +190,7 @@ $(document).ready(function() {
 		{
 			$("#error_ap").hide();
 			$("#error_en_ap").hide();
+			$('.ap').removeClass('is-invalid');
 		}
 		//cuentanos sobre tu empresa
 		if ( trim($("#cste").val()) == '' )

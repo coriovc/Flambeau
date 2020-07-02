@@ -29,41 +29,40 @@
 </head>
   <body class="bg-image">
   <div class="modal-movil">
-    <div class="modal-dialog modal-dialog-centered modal-sm border-0">
-      <div class="modal-content py-2">
+    <div class="modal-dialog modal-centered modal-sm border-0">
+      <div class="modal-content">
       <div class="text-center">
           <img class="img-fluid mb-3" width="200"  src="../assets/img/logo-white.png">
         </div>   
         <div class="card">
           <div class="card-body">
           <div class="py-3 text-center">
-            <p class="font-gray-9 font-m-login">Write your username and password to enter.</p>
-            <p class="font-gray-9 font-m-login">Did you forget your password or your username? <a class="link" href=""> Click here</a></p>
+            <p class="font-gray-8 font-m-login">Write your username and password to enter.</p>
         
           </div>     
           <form>
                 <fieldset>  
-                  <div class="form-group">
-                    <div class="my-3 form-label-group lef">
-                    <input type="text" name="usuario" id="usuario" value="" class="form-control" placeholder="usuario" required>
-                    <label for="usuario">User</label>
-                    <div class="invalid-feedback"></div>
-                    <span id="error_usuario" class="error"></span> 
-                    </div>
+                <div class="form-group">
+                  <div class="my-3 form-label-group lef user">
+                  <input type="text" name="user" id="user" value="" class="form-control" placeholder="User" required>
+                  <label for="user">User</label>
+                  <div class="invalid-feedback"></div>
+                  <span id="error_en_user" class="error"></span> 
                   </div>
-                  <div class="form-group">
-                    <div class="my-3 form-label-group lef">
-                    <input type="password" name="contraseña" id="contraseña" value="" class="form-control" placeholder="Contraseña" required>
-                    <label for="contraseña">Password</label>
-                    <div class="invalid-feedback"></div>
-                    <span id="error_contraseña" class="error"></span> 
-                    </div>
+                </div>
+                <div class="form-group">
+                  <div class="my-3 form-label-group lef password">
+                  <input type="password" name="password" id="password" value="" class="form-control" placeholder="Password" required>
+                  <label for="password">Password</label>
+                  <div class="invalid-feedback"></div>
+                  <span id="error_en_password" class="error"></span> 
                   </div>
-                </fieldset>
+                </div>
+              </fieldset>
             
           </div>                          
           <div class="card-footer py-3 text-center">
-                <button type="submit" class="btn btn-primary col" >login</button>
+                <button type="submit" class="send btn btn-primary col">login</button>
           </div>
           </form>             
         </div>
@@ -79,5 +78,6 @@
   <script src="../assets/js/jquery.sticky.js"></script>
   <script src="../assets/js/aos.js"></script>
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/validate-form-login.js"></script>
 </html>
 

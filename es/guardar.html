@@ -37,23 +37,23 @@
         <div class="card">
           <div class="card-body">
           <div class="py-3 ">
-             <p class="font-gray-9">Tu formulario será guardado para que puedas terminar de completarlo más tarde. Por favor, ingresá el email a donde deseas recibir el link del formulario:</p>
+             <p class="font-zize-g">Tu formulario será guardado para que puedas terminar de completarlo más tarde. Por favor, ingresá el email a donde deseas recibir el link del formulario:</p>
           </div>     
           <form>
                 <fieldset>                
               <div class="form-group">
-                <div class="my-4 form-label-group lef">
-                  <input type="email" name="emailid" id="emailid" value="" class="form-control" placeholder="Email" required>
-                  <label for="emailid">Email</label>                  
+                <div class="my-4 form-label-group lef email">
+                  <input type="email" name="email" id="email" value="" class="form-control" placeholder="Email" required>
+                  <label for="email">Email</label>                  
                   <div class="invalid-feedback"></div>
-                  <span id="error_emailid" class="error"></span>  
+                  <span id="error_email" class="error"></span>  
                   </div> 
               </div>
             </fieldset>
             
           </div>                          
           <div class="card-footer py-3 text-center">
-                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal2">Completar mas tarde</button>
+                 <button type="submit" class="send btn btn-primary" data-toggle="modal" data-target="">Completar mas tarde</button>
           </div>
           </form>             
         </div>
@@ -64,7 +64,7 @@
     
   
 
-<div class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+<div class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="overflow: hidden;">
   <div class="modal-dialog modal-dialog-centered modal-sm border-0">
     <div class="modal-content py-2">
       <div class="card">
@@ -92,5 +92,6 @@
   <script src="../assets/js/jquery.sticky.js"></script>
   <script src="../assets/js/aos.js"></script>
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/validate-form-g.js"></script>
 </html>
 
