@@ -124,7 +124,7 @@
           <div class="col-md-9" data-aos="fade-up">            
             <h6 class="font-gray-5 mayus">nuestro foco</h6>
             <h1 class="display-h1 text-primary font-martel py-3">Son tiempos desafiantes.</h1>
-            <p class="font-nf">Es hora de avivar la llama. <br class="d-inline-block d-xl-none"> Acompañamos a líderes y startups tecnológicas con modelos de negocio validados en su proceso de expansión.</p>            
+            <p class="font-nf">Es hora de avivar la llama. <br class="d-inline-block d-xl-none"> Acompañamos a líderes y startups tecnológicas, con modelos de negocio validados, en su proceso de expansión.</p>            
           </div>
           </div>
         </div>
@@ -175,7 +175,7 @@
               <h1 class="display-sub-title mb-4 text-white d-inline-block d-xl-none">Flambeau Capital<br> Partners es una  firma de <span class="tex-b">Venture Capital.</span></h1>
              </div>
             <div class="col-md-12 text-left" data-aos="fade-up">              
-              <p class="p-adn ">Invertimos en empresas tecnológicas argentinas sobresalientes con lideres con <strong style="font-weight: 300;">FUEGO</strong> interior,</p> 
+              <p class="p-adn ">Invertimos en empresas tecnológicas argentinas sobresalientes con líderes con <strong style="font-weight: 300;">FUEGO</strong> interior,</p> 
               <p class="p-adn mb-4">que tengan como objetivo <span class="tex-b1" >expandir sus negocios a otros países.</span></p>
               <p class="p-adn">Los socios que conforman Flambeau Capital Partners cuentan con extensa trayectoria</p>  
               <p class="p-adn mb-5">creando y liderando Empresas en Europa y latam.</p>
@@ -284,7 +284,7 @@
          </div>
           <div > 
             <h1 class="display-3 text-primary mt-5 ml-4" data-aos="fade-right">Si hay fuego,</h1>
-            <h1 class="display-3 text-primary mb-5 ml-4" data-aos="fade-right">hay Futuro.</h1>
+            <h1 class="display-3 text-primary mb-5 ml-4" data-aos="fade-right">hay FUTURO.</h1>
           </div>
         </div>
       </div>
@@ -328,7 +328,7 @@
                 <div class="form-group row">
                   
                   <div class="col-lg-5 my-4 form-label-group phone">
-                  <input type="text" name="phone" id="phone" value="" class="form-control" placeholder="Telefono" minlength="8" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required>
+                  <input type="tel" name="phone" id="phone" value="" class="form-control" placeholder="Telefono" minlength="8" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required>
                   <label for="inputPhone">Telefono *</label>                  
                   <div class="invalid-feedback"></div>
                   <span id="error_phone" class="error"></span>
@@ -448,14 +448,14 @@
           <div class="card-body">
               <fieldset>
                 <div class="form-group row" id="listas">                  
-                  <legend class="my-4 ml-3 text-blue font-zize-1-3rem"><strong>Linkedin Equipo Directivo</strong></legend>
+                  <legend class="my-4 ml-3 text-blue font-zize-1-3rem"><strong>LinkedIn Equipo Directivo</strong></legend>
                   
                   <div class="col-lg-5 my-4 form-label-group">
                   <input type="text" name="linkedin" value="" id="linkedin" class="form-control" placeholder="Ingresar Linkedin">
-                  <label for="linkedin">Ingresar Linkedin</label>                  
+                  <label for="linkedin">Ingresar LinkedIn</label>                  
                   </div>    
                   <div class="col-sm-5 my-4">                      
-                      <a class="text-gray-link" href="#" id="add_field"><button type="button" class="btn btn-outline-dark btn-circle btn-sm mr-2"><i class="icon-add"></i></button>Agregar otro linkedin</a>              
+                      <a class="text-gray-link" href="#" id="add_field"><button type="button" class="btn btn-outline-dark btn-circle btn-sm mr-2"><i class="icon-add"></i></button>Agregar otro LinkedIn</a>              
                   </div>                
                 </div> 
               </fieldset>
@@ -467,29 +467,32 @@
           <div class="card-body">
             <fieldset>            
               <div class="form-group row">  
-                <legend class="my-4 ml-3 text-blue font-zize-1-3rem"><strong>Adjunta tu Propuesta</strong></legend>                
+                <legend class="my-4 ml-3 text-blue font-zize-1-3rem"><strong>Adjunta tu Propuesta</strong></legend>  
+
+                              
                   
                   <div class="col-lg-5 my-4 ">                    
                     <div class="input-group">
                     <div class="custom-file">
                     <input type="text" name="files" value="" id="files" class="form-control ap" placeholder="Ajuntar tu propuesta *" readonly>
-                    </div><div class="invalid-feedback"></div>       
-
+                    </div><div class="invalid-feedback"></div>
                     <div class="input-group-append">                      
                       <div class="image-upload" id="icon"  onmouseover="entra(this)" onmouseout="salir(this)">
                         <label for="file-input">
-                        <img style="cursor: pointer; margin-bottom: -1.5rem; margin-left: 0.5rem;" width="24" src="../assets/img/icon-upload.png" alt="icon">
+                        <img style="cursor: pointer; margin-bottom: -1rem; margin-left: 0.5rem;" width="18" src="../assets/img/icon-upload.png" alt="icon">
                       </label>
-                        <input type="file" style="opacity: 0; width: 10px; position: relative; z-index: 2;" id="file-input" onchange="this.form.files.value = this.files.length ? this.files[0].name : ''" required></div>
+                        <input type="file" style="opacity: 0; width: 10px; position: absolute; z-index: 100;" id="file-input" onchange="this.form.files.value = this.files.length ? this.files[0].name : ''" required></div>
                     </div>
                     <div class="py-2 ml-2" id="btn-adj1">                      
-                        <i class="icon-question font-gray-6"></i>
+                        <i class="icon-question-circle text-primary"></i>
                     </div>
-
-                    </div>
-                    
+                    </div>                    
                     <span id="error_ap" class="error"></span>                    
-                  </div>
+                  </div>     
+
+
+
+
 
                   <div class="col-lg-5 my-4">                    
                     <div class="input-group">
@@ -499,12 +502,12 @@
                     <div class="input-group-append">                      
                       <div class="image-upload" id="icon"  onmouseover="entra(this)" onmouseout="salir(this)">
                         <label for="file-input-a">
-                        <img style="cursor: pointer; margin-bottom: -1.5rem; margin-left: 0.5rem;" width="24" src="../assets/img/icon-upload.png" alt="icon">
+                        <img style="cursor: pointer; margin-bottom: -1rem; margin-left: 0.5rem;" width="18" src="../assets/img/icon-upload.png" alt="icon">
                       </label>
                         <input type="file" style="opacity: 0; width: 10px; position: relative; z-index: 2;" id="file-input-a" onchange="this.form.files1.value = this.files.length ? this.files[0].name : ''" required></div>
                     </div>
                     <div class="py-2 ml-2" id="btn-adj2">                      
-                        <i class="icon-question font-gray-6"></i>
+                        <i class="icon-question-circle text-primary"></i>
                     </div>
                     </div>                    
                   </div>
@@ -533,7 +536,7 @@
                 </div>
                 <div class="d-none d-lg-block">
                 <div class="row ml-1 align-items-center mt-4">
-                <button type="submit" class="send btn btn-primary border-0 py-2 px-5 disabled">Enviar</button>
+                <button type="submit" id="send" class="send btn btn-primary border-0 py-2 px-5" disabled>Enviar</button>
                 <div class="row ml-1 align-items-center">              
                 <i class="icon-angle-right p-2 text-white"></i><a href="guardar.html" class="btn-p link-g  text-white ">Guardar y continuar mas tarde</a>
               </div>
@@ -544,7 +547,7 @@
             <div class="d-inline-block d-xl-none col text-center">                
                 <div align="center" class="align-items-center">
                 <div class="py-3">
-                <button type="submit" class="send btn btn-primary border-0 col disabled">Enviar</button></div>
+                <button type="submit" id="send-m" class="send btn btn-primary border-0 col" disabled>Enviar</button></div>
                 <div  class="align-items-center">              
                 <i class="icon-angle-right p-2 text-white"></i><a href="guardar.html" class="btn-p link-g text-white ">Guardar y continuar mas tarde</a>
               </div>                 
@@ -563,11 +566,11 @@
             <a href="index.html"><img width="150" class="img-fluid" src="../assets/img/logo-white.png"></a>
             <p class="text-white mb-4 mt-4 font-zize-direc">Blas Parera 3551, Olivos B1636. Buenos Aires, Argentina</p>
             <a href="politica-de-privacidad.html" class="mr-4 link">Politica de privacidad</a>
-            <a href="cookies.html" class="link">Cookies</a>
+            <a href="terminos-y-condiciones.html" class="link">Terminos y condiciones</a>
           </div>            
           <div align="right">
-                <button onclick="window.location='https://www.linkedin.com/company/flambeaucapital'" class="btn btn-outline-social-f btn-circle mr-2"><i class="icon-linkedin"></i></button>
-                <button onclick="window.location='https://twitter.com/flambeaucapital'" class="btn btn-outline-social-f btn-circle mr-2"><i class="icon-twitter"></i></button>
+                <button type="button" onclick="window.open('https://www.linkedin.com/company/flambeaucapital')" class="btn btn-outline-social-f btn-circle mr-2"><i class="icon-linkedin"></i></button>
+                <button type="button" onclick="window.open('https://twitter.com/flambeaucapital')" class="btn btn-outline-social-f btn-circle mr-2"><i class="icon-twitter"></i></button>
           </div>                        
         </div>        
       </div>    
@@ -608,7 +611,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <script src="../assets/js/bootstrap-select.js"></script>
   <script src="https://unpkg.com/popper.js@1"></script>
   <script src="https://unpkg.com/tippy.js@5"></script>
