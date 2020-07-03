@@ -66,8 +66,8 @@
                 <li class="d-inline-block d-xl-none"><button onclick="window.location='login-movil.html'"class="btn btn-outline-primary btn-sm my-3 ml-3">Login</button></li>
                 <li class="d-inline-block d-xl-none"><hr></li>
                 <li class="d-inline-block d-xl-none">                  
-                <button onclick="window.location='https://www.linkedin.com/company/flambeaucapital'" class="btn btn-outline-dark btn-circle mr-4"><i class="icon-linkedin"></i></button>
-                <button onclick="window.location='https://twitter.com/flambeaucapital'" class="btn btn-outline-dark btn-circle"><i class="icon-twitter"></i></button>
+                <button onclick="window.open('https://www.linkedin.com/company/flambeaucapital')" class="btn btn-outline-dark btn-circle mr-4"><i class="icon-linkedin"></i></button>
+                <button onclick="window.open('https://twitter.com/flambeaucapital')" class="btn btn-outline-dark btn-circle"><i class="icon-twitter"></i></button> 
                 </li>
                 <li class="d-inline-block d-xl-none mt-5">
                   <a href="politica-de-privacidad.html" class="link-a">Politica de privacidad</a>
@@ -344,7 +344,7 @@
                 </div>
                 <div class="form-group row ">
                 <div class="col-lg-5 my-4 sector" style="margin-top: 1rem;">  
-                    <label class="label-select1" for="sector">Sector *</label>
+                    <label class="label-select1 color-la" for="sector">Sector *</label>
                     <select class="form-control selectpicker" data-style="btn-transparent" name="sector" id="sector" data-size="6" required>
                       <option value="">seleciona</option>
                       <option value="2">Adtech y Marketing Digital</option>
@@ -391,7 +391,7 @@
                   </div>
                   
                   <div class="col-lg-5 my-4 inv">  
-                        <label for="inv" class="label-select1">La Inversión que busco es por *</label>
+                        <label for="inv" class="label-select1 color-la">La Inversión que busco es por *</label>
                         <select class="form-control selectpicker" data-style="btn-transparent" name="inv" id="inv" data-size="6" required>
                           <option value="">selecciona</option>
                           <option value="1">Entre 300.000 USD y 500.000 USD</option>
@@ -431,7 +431,7 @@
                   </div>
 
                   <div class="col-lg-5 my-4 form-label-group fau">
-                  <input type="text" name="fau" value="" id="fau" class="form-control" placeholder="Facturacion anual en USD" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required>
+                  <input type="tel" name="fau" value="" id="fau" class="form-control" placeholder="Facturacion anual en USD" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required>
                   <label for="fau">Facturacion anual en USD *</label>                  
                   <div class="invalid-feedback"></div>
                   <span id="error_fau" class="error"></span>                     
@@ -504,7 +504,7 @@
                         <label for="file-input-a">
                         <img style="cursor: pointer; margin-bottom: -1rem; margin-left: 0.5rem;" width="18" src="../assets/img/icon-upload.png" alt="icon">
                       </label>
-                        <input type="file" style="opacity: 0; width: 10px; position: relative; z-index: 2;" id="file-input-a" onchange="this.form.files1.value = this.files.length ? this.files[0].name : ''" required></div>
+                        <input type="file" style="opacity: 0; width: 10px; position: absolute; z-index: 100;" id="file-input-a" onchange="this.form.files1.value = this.files.length ? this.files[0].name : ''" required></div>
                     </div>
                     <div class="py-2 ml-2" id="btn-adj2">                      
                         <i class="icon-question-circle text-primary"></i>

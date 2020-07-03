@@ -375,6 +375,9 @@ h6, .h6 {
   line-height: 1.1;
   font-family: 'Martel' !important;}
 
+.color-la{ 
+  color:#adacb2 !important;
+}
 
 .p-criterio {
   font-size:  0.875rem;
@@ -2585,7 +2588,8 @@ outline: none !important;}
 
 .btn-outline-dark {
   color: #707070;
-  border-color: #707070; }
+  border-color: #707070;
+  outline: none !important; }
   .btn-outline-dark:hover {
     color: #fff;
     background-color: #707070;
@@ -3047,7 +3051,8 @@ input[type="button"].btn-block {
 .input-group-append {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+z-index: 2;}
   .input-group-prepend .btn,
   .input-group-append .btn {
     position: relative;
@@ -3069,7 +3074,7 @@ input[type="button"].btn-block {
   margin-right: -1px; }
 
 .input-group-append {
-  margin-left: -1px; }
+  margin-left: -30px; }
 
 .input-group-text {
   display: -webkit-box;

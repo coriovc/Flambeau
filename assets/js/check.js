@@ -3,9 +3,12 @@ $("#check").on("click", function() {
   if($("#check").prop('checked')) {
     
     if(!empty) {
-      $('.send').removeClass('disabled');
+      $('#send').removeAttr('disabled');
+      $('#send-m').removeAttr('disabled');
       return;
     }
+  }else{
+  	$('#send').attr('disabled', true);
+  	$('#send-m').attr('disabled', true);
   }
-  $('.send').addClass('disabled');
 });

@@ -110,6 +110,10 @@ html {
   font-size: 1rem;
 }
 
+.remover_campo{
+  font-size: 0.8rem;
+}
+
 .font-zize-g {
   color: #7b7b7b;
   font-size: 0.75rem;
@@ -2646,12 +2650,13 @@ div.ricki
   font-size:14px;
   color:#adacb2;
   padding: 0 16px;
-  color:#adacb2;
+  color:#adacb2 !important;
   outline: none;
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
 }
+
 
  img {
   transition: opacity .2s ease-in-out;
@@ -2695,6 +2700,7 @@ div.ricki
 .image-upload img
 {
     cursor: pointer;
+
 }
 
 .input-file{
@@ -2702,4 +2708,20 @@ div.ricki
   width: 10px; 
   position: relative; 
   z-index: 2;
+}
+
+
+.input-icon-wrap {
+  border: 1px solid #ddd;    
+  display: flex;
+  flex-direction: row;
+}
+
+.input-with-icon {
+  border: none;
+  flex: 1;
+}
+
+.input-icon, .input-with-icon {
+  padding: 10px;
 }

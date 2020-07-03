@@ -42,7 +42,7 @@ $(document).ready(function() {
 		if ( trim($("#phone").val()) == '' )
 		{
 			$('.phone').addClass('was-validated');
-			$("#error_phone").html('Por favor ingrese un numero de telefono.');
+			$("#error_phone").html('Por favor ingrese un numero de teléfono.');
 			$("#error_phone").show();
 			$("#error_en_phone").html('Please enter a phone number.');
 			$("#error_en_phone").show();
@@ -139,7 +139,7 @@ $(document).ready(function() {
 		if ( trim($("#inv").val()) == '' )
 		{
 			$('.inv').addClass('was-validated');
-			$("#error_inv").html('seleccione un monto de inversion.');
+			$("#error_inv").html('seleccione un monto de inversión');
 			$("#error_inv").show();
 			$("#error_en_inv").html('select an investment amount.');
 			$("#error_en_inv").show();
@@ -161,7 +161,7 @@ $(document).ready(function() {
 		if ( trim($("#fau").val()) == '' )
 		{
 			$('.fau').addClass('was-validated');
-			$("#error_fau").html('Indique su Facturacion anual en UDS.');
+			$("#error_fau").html('Indique su Facturación anual en UDS.');
 			$("#error_fau").show();
 			$("#error_en_fau").html('Indicate your annual billing in UDS.');
 			$("#error_en_fau").show();
@@ -179,7 +179,7 @@ $(document).ready(function() {
         if(fileval=='')
 		{
 			$('.ap').addClass('is-invalid');
-			$("#error_ap").html('Ajunte una propuesta.');
+			$("#error_ap").html('Adjunta una propuesta.');
 			$("#error_ap").show();
 			$("#error_en_ap").html('Attach a proposal.');
 			$("#error_en_ap").show();
